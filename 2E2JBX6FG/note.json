@@ -1,0 +1,298 @@
+{
+  "paragraphs": [
+    {
+      "text": "%md\n## Zeppelin Charts\n\n* Ohne auf wirkliche Daten zuzugreifen\n* https://zeppelin.apache.org/docs/0.8.0/usage/display_system/basic.html#table\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-18 11:17:22.864",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": false,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eZeppelin Charts\u003c/h2\u003e\n\u003cul\u003e\n  \u003cli\u003eOhne auf wirkliche Daten zuzugreifen\u003c/li\u003e\n  \u003cli\u003e\u003ca href\u003d\"https://zeppelin.apache.org/docs/0.8.0/usage/display_system/basic.html#table\"\u003ehttps://zeppelin.apache.org/docs/0.8.0/usage/display_system/basic.html#table\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547808241385_886124937",
+      "id": "20190118-104401_49927514",
+      "dateCreated": "2019-01-18 10:44:01.385",
+      "dateStarted": "2019-01-18 11:16:57.254",
+      "dateFinished": "2019-01-18 11:16:57.258",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sh\necho -e \"\"\"%table\nsize\\tdir\n$(cd /opt/zeppelin; du -s *) \n\"\"\"\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-18 11:17:22.870",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "pieChart",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "size": "string",
+                      "dir": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "pieChart": {},
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "dir",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "size",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh",
+        "tableHide": false,
+        "editorHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "size\tdir\n61\tLICENSE\n6\tNOTICE\n2\tREADME.md\n52\tbin\n104\tconf\n248734\tinterpreter\n110784\tlib\n200\tlicenses\n19194\tlocal-repo\n342\tlogs\n984\tnotebook\n5\trun\n75338\twebapps\n29461\tzeppelin-web-0.8.0.war \n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547809442370_-1175581787",
+      "id": "20190118-110402_65318721",
+      "dateCreated": "2019-01-18 11:04:02.370",
+      "dateStarted": "2019-01-18 11:16:57.360",
+      "dateFinished": "2019-01-18 11:16:57.555",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sh\necho -e \"\"\"%table\n$(ps -Af | sed -e \u0027s/\\ \\+/\\t/g;\u0027) \n\"\"\"\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-18 11:17:22.875",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "UID": "string",
+                      "PID": "string",
+                      "PPID": "string",
+                      "C": "string",
+                      "STIME": "string",
+                      "TTY": "string",
+                      "TIME": "string",
+                      "CMD": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "UID",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "PID",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh",
+        "editorHide": false,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "UID\tPID\tPPID\tC\tSTIME\tTTY\tTIME\tCMD\nroot\t1\t0\t0\t09:37\t?\t00:00:00\t/sbin/init\nroot\t61\t1\t0\t09:37\t?\t00:00:00\t/lib/systemd/systemd-journald\nroot\t80\t1\t0\t09:37\t?\t00:00:00\t/lib/systemd/systemd-udevd\nsystemd+\t296\t1\t0\t09:37\t?\t00:00:00\t/lib/systemd/systemd-networkd\nsystemd+\t298\t1\t0\t09:37\t?\t00:00:00\t/lib/systemd/systemd-resolved\nmessage+\t321\t1\t0\t09:37\t?\t00:00:00\t/usr/bin/dbus-daemon\t--system\t--address\u003dsystemd:\t--nofork\t--nopidfile\t--systemd-activation\t--syslog-only\nroot\t322\t1\t0\t09:37\t?\t00:00:00\t/usr/lib/accountsservice/accounts-daemon\nsyslog\t323\t1\t0\t09:37\t?\t00:00:00\t/usr/sbin/rsyslogd\t-n\nroot\t326\t1\t0\t09:37\t?\t00:00:00\t/usr/sbin/cron\t-f\nroot\t337\t1\t0\t09:37\t?\t00:00:00\t/usr/bin/python3\t/usr/bin/networkd-dispatcher\t--run-startup-triggers\nroot\t338\t1\t0\t09:37\t?\t00:00:00\t/lib/systemd/systemd-logind\ndaemon\t343\t1\t0\t09:37\t?\t00:00:00\t/usr/sbin/atd\t-f\nroot\t346\t1\t0\t09:37\t?\t00:00:00\t/usr/lib/snapd/snapd\nroot\t355\t1\t0\t09:37\t?\t00:00:00\t/sbin/agetty\t-o\t-p\t--\t\\u\t--noclear\t--keep-baud\tconsole\t115200,38400,9600\tlinux\nroot\t358\t1\t0\t09:37\t?\t00:00:00\t/usr/bin/python3\t/usr/share/unattended-upgrades/unattended-upgrade-shutdown\t--wait-for-signal\nroot\t362\t1\t0\t09:37\t?\t00:00:00\t/usr/lib/policykit-1/polkitd\t--no-debug\nroot\t386\t0\t0\t09:37\t?\t00:00:00\tsu\t-l\nroot\t387\t1\t0\t09:37\t?\t00:00:00\t/lib/systemd/systemd\t--user\nroot\t388\t387\t0\t09:37\t?\t00:00:00\t(sd-pam)\nroot\t392\t1\t0\t09:37\t?\t00:00:00\t/usr/bin/perl\t-wT\t/usr/sbin/munin-node\nroot\t588\t386\t0\t09:37\t?\t00:00:00\t-su\nroot\t670\t1\t0\t09:37\t?\t00:00:00\t/usr/sbin/sshd\t-D\nroot\t727\t1\t0\t09:37\t?\t00:00:00\t/usr/sbin/apache2\t-k\tstart\nwww-data\t728\t727\t0\t09:37\t?\t00:00:00\t/usr/sbin/apache2\t-k\tstart\npostgres\t729\t1\t0\t09:37\t?\t00:00:00\t/usr/lib/postgresql/10/bin/postgres\t-D\t/var/lib/postgresql/10/main\t-c\tconfig_file\u003d/etc/postgresql/10/main/postgresql.conf\nmysql\t751\t1\t0\t09:37\t?\t00:00:02\t/usr/sbin/mysqld\t--daemonize\t--pid-file\u003d/run/mysqld/mysqld.pid\nwww-data\t767\t727\t0\t09:37\t?\t00:00:00\t/usr/sbin/apache2\t-k\tstart\nwww-data\t768\t727\t0\t09:37\t?\t00:00:00\t/usr/sbin/apache2\t-k\tstart\nwww-data\t769\t727\t0\t09:37\t?\t00:00:00\t/usr/sbin/apache2\t-k\tstart\nwww-data\t770\t727\t0\t09:37\t?\t00:00:00\t/usr/sbin/apache2\t-k\tstart\nwww-data\t771\t727\t0\t09:37\t?\t00:00:00\t/usr/sbin/apache2\t-k\tstart\npostgres\t785\t729\t0\t09:37\t?\t00:00:00\tpostgres:\t10/main:\tcheckpointer\tprocess\t\npostgres\t786\t729\t0\t09:37\t?\t00:00:00\tpostgres:\t10/main:\twriter\tprocess\t\npostgres\t787\t729\t0\t09:37\t?\t00:00:00\tpostgres:\t10/main:\twal\twriter\tprocess\t\npostgres\t788\t729\t0\t09:37\t?\t00:00:00\tpostgres:\t10/main:\tautovacuum\tlauncher\tprocess\t\npostgres\t789\t729\t0\t09:37\t?\t00:00:00\tpostgres:\t10/main:\tstats\tcollector\tprocess\t\npostgres\t790\t729\t0\t09:37\t?\t00:00:00\tpostgres:\t10/main:\tbgworker:\tlogical\treplication\tlauncher\t\nwww-data\t1062\t727\t0\t09:39\t?\t00:00:00\t/usr/sbin/apache2\t-k\tstart\nzeppelin\t1500\t1\t0\t09:41\t?\t00:01:04\tjava\t-Dfile.encoding\u003dUTF-8\t-Xms1024m\t-Xmx1024m\t-XX:MaxPermSize\u003d512m\t-Dlog4j.configuration\u003dfile:///opt/zeppelin/conf/log4j.properties\t-Dzeppelin.log.file\u003d/opt/zeppelin/logs/zeppelin-zeppelin-sb-db-01.log\t-cp\t::/opt/zeppelin/lib/interpreter/*:/opt/zeppelin/lib/*:/opt/zeppelin/*::/opt/zeppelin/conf\torg.apache.zeppelin.server.ZeppelinServer\nroot\t1580\t588\t0\t09:41\t?\t00:00:00\tssh\tzeppelin@localhost\nroot\t1581\t670\t0\t09:41\t?\t00:00:00\tsshd:\tzeppelin\t[priv]\nzeppelin\t1583\t1\t0\t09:41\t?\t00:00:00\t/lib/systemd/systemd\t--user\nzeppelin\t1584\t1583\t0\t09:41\t?\t00:00:00\t(sd-pam)\nzeppelin\t1659\t1581\t0\t09:41\t?\t00:00:00\tsshd:\tzeppelin@pts/0\nzeppelin\t1660\t1659\t0\t09:41\tpts/0\t00:00:00\t-bash\nzeppelin\t2185\t1500\t0\t09:45\t?\t00:00:00\t/bin/bash\t/opt/zeppelin/bin/interpreter.sh\t-d\t/opt/zeppelin/interpreter/md\t-c\t10.80.6.16\t-p\t41587\t-r\t:\t-l\t/opt/zeppelin/local-repo/md\t-g\tmd\nzeppelin\t2197\t2185\t0\t09:45\t?\t00:00:00\t/bin/bash\t/opt/zeppelin/bin/interpreter.sh\t-d\t/opt/zeppelin/interpreter/md\t-c\t10.80.6.16\t-p\t41587\t-r\t:\t-l\t/opt/zeppelin/local-repo/md\t-g\tmd\nzeppelin\t2198\t2197\t0\t09:45\t?\t00:00:10\tjava\t-Dfile.encoding\u003dUTF-8\t-Dlog4j.configuration\u003dfile:///opt/zeppelin/conf/log4j.properties\t-Dzeppelin.log.file\u003d/opt/zeppelin/logs/zeppelin-interpreter-md-zeppelin-sb-db-01.log\t-Xms1024m\t-Xmx1024m\t-XX:MaxPermSize\u003d512m\t-cp\t:/opt/zeppelin/interpreter/md/*:/opt/zeppelin/lib/interpreter/*:\torg.apache.zeppelin.interpreter.remote.RemoteInterpreterServer\t10.80.6.16\t41587\t:\nroot\t6608\t0\t0\t10:36\t?\t00:00:00\tsu\t-l\nroot\t6609\t6608\t0\t10:36\t?\t00:00:00\t-su\nzeppelin\t7749\t1500\t0\t10:48\t?\t00:00:00\t/bin/bash\t/opt/zeppelin/bin/interpreter.sh\t-d\t/opt/zeppelin/interpreter/sh\t-c\t10.80.6.16\t-p\t34993\t-r\t:\t-l\t/opt/zeppelin/local-repo/sh\t-g\tsh\nzeppelin\t7761\t7749\t0\t10:48\t?\t00:00:00\t/bin/bash\t/opt/zeppelin/bin/interpreter.sh\t-d\t/opt/zeppelin/interpreter/sh\t-c\t10.80.6.16\t-p\t34993\t-r\t:\t-l\t/opt/zeppelin/local-repo/sh\t-g\tsh\nzeppelin\t7762\t7761\t0\t10:48\t?\t00:00:04\tjava\t-Dfile.encoding\u003dUTF-8\t-Dlog4j.configuration\u003dfile:///opt/zeppelin/conf/log4j.properties\t-Dzeppelin.log.file\u003d/opt/zeppelin/logs/zeppelin-interpreter-sh-zeppelin-sb-db-01.log\t-Xms1024m\t-Xmx1024m\t-XX:MaxPermSize\u003d512m\t-cp\t:/opt/zeppelin/interpreter/sh/*:/opt/zeppelin/lib/interpreter/*:\torg.apache.zeppelin.interpreter.remote.RemoteInterpreterServer\t10.80.6.16\t34993\t:\nzeppelin\t10791\t7762\t0\t11:16\t?\t00:00:00\tbash\t-c\techo\t-e\t\"\"\"%table\t$(ps\t-Af\t|\tsed\t-e\t\u0027s/\\\t\\+/\t/g;\u0027)\t\"\"\"\nzeppelin\t10793\t10791\t0\t11:16\t?\t00:00:00\tbash\t-c\techo\t-e\t\"\"\"%table\t$(ps\t-Af\t|\tsed\t-e\t\u0027s/\\\t\\+/\t/g;\u0027)\t\"\"\"\nzeppelin\t10794\t10793\t0\t11:16\t?\t00:00:00\tps\t-Af\nzeppelin\t10795\t10793\t0\t11:16\t?\t00:00:00\tsed\t-e\ts/\\\t\\+/\t/g; \n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547809773575_1135611576",
+      "id": "20190118-110933_45694260",
+      "dateCreated": "2019-01-18 11:09:33.575",
+      "dateStarted": "2019-01-18 11:16:57.570",
+      "dateFinished": "2019-01-18 11:16:57.601",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sh\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-18 11:17:22.880",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh",
+        "tableHide": false,
+        "editorHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1547810200382_681397619",
+      "id": "20190118-111640_1154882804",
+      "dateCreated": "2019-01-18 11:16:40.383",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Demo / Zeppelin / Charts",
+  "id": "2E2JBX6FG",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "md:shared_process": [],
+    "sh:shared_process": []
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}
