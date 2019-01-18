@@ -1,0 +1,158 @@
+{
+  "paragraphs": [
+    {
+      "text": "%md\n## Zeppelin Interpreter Shell `%sh`\n\n* https://zeppelin.apache.org/docs/0.8.0/interpreter/shell.html\n* nicht ungefährlich\n\n### Azure (Microsoft)\n* https://docs.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-zeppelin-notebook\n\u003e %sh interpreter will not be supported from HDInsight 4.0 onwards.\n ",
+      "user": "admin",
+      "dateUpdated": "2019-01-18 10:57:09.967",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eZeppelin Interpreter Shell \u003ccode\u003e%sh\u003c/code\u003e\u003c/h2\u003e\n\u003cul\u003e\n  \u003cli\u003e\u003ca href\u003d\"https://zeppelin.apache.org/docs/0.8.0/interpreter/shell.html\"\u003ehttps://zeppelin.apache.org/docs/0.8.0/interpreter/shell.html\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003enicht ungefährlich\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eAzure (Microsoft)\u003c/h3\u003e\n\u003cul\u003e\n  \u003cli\u003e\n  \u003cp\u003e\u003ca href\u003d\"https://docs.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-zeppelin-notebook\"\u003ehttps://docs.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-zeppelin-notebook\u003c/a\u003e\u003c/p\u003e\n  \u003cblockquote\u003e\n    \u003cp\u003e%sh interpreter will not be supported from HDInsight 4.0 onwards.\u003c/p\u003e\n  \u003c/blockquote\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547808390313_1644937166",
+      "id": "20190118-104630_82358079",
+      "dateCreated": "2019-01-18 10:46:30.313",
+      "dateStarted": "2019-01-18 10:57:09.976",
+      "dateFinished": "2019-01-18 10:57:09.982",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sh\necho Hallo welt\n\ndate\npwd\nwhoami\nid -a\n\nls -ls\nls -l /etc/passwd\ngrep zeppelin /etc/passwd\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-18 10:57:10.075",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Hallo welt\nFri Jan 18 10:57:10 UTC 2019\n/home/zeppelin\nzeppelin\nuid\u003d1002(zeppelin) gid\u003d1001(zeppelin) groups\u003d1001(zeppelin)\ntotal 4\n1 lrwxrwxrwx 1 zeppelin zeppelin 29 Jan 18 09:38 notebook -\u003e notebook.zep-note-demos-db-01\n2 drwxr-xr-x 9 zeppelin zeppelin  9 Jan 18 07:37 notebook.20190118_093739\n1 lrwxrwxrwx 1 zeppelin zeppelin 20 Jan 18 09:37 notebook.zep-note-demos-db-01 -\u003e zep-note-demos-db-01\n2 drwxrwxr-x 6 zeppelin zeppelin  6 Jan 18 10:46 zep-note-demos-db-01\n-rw-r--r-- 1 root root 1901 Jan 18 07:36 /etc/passwd\nzeppelin:x:1002:1001::/home/zeppelin:/bin/bash\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547808509976_-253439883",
+      "id": "20190118-104829_1141963590",
+      "dateCreated": "2019-01-18 10:48:29.976",
+      "dateStarted": "2019-01-18 10:57:10.084",
+      "dateFinished": "2019-01-18 10:57:10.103",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sh\necho -e \"%html $(curl https://ipv6excuses.com)\"\n\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-18 10:57:10.183",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100   706    0   706    0     0    442      0 --:--:--  0:00:01 --:--:--   442\n"
+          },
+          {
+            "type": "HTML",
+            "data": "\n\u003chtml\u003e\n\u003chead\u003e\n\u003clink rel\u003d\"stylesheet\" type\u003d\"text/css\" href\u003d\"style.css\"\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\n\u003ch1\u003eWe forgot to include IPv6 in our last RFP\n\u003c/h1\u003e\n\u003cbr /\u003e\n\u003cbr /\u003e\nSuggest a new excuse:\n\u003ca href\u003d\"https://twitter.com/intent/tweet?screen_name\u003dipv6excuses\" class\u003d\"twitter-mention-button\" data-related\u003d\"ipv6excuses\"\u003eTweet to @ipv6excuses\u003c/a\u003e\n\u003cscript\u003e!function(d,s,id){var js,fjs\u003dd.getElementsByTagName(s)[0],p\u003d/^http:/.test(d.location)?\u0027http\u0027:\u0027https\u0027;if(!d.getElementById(id)){js\u003dd.createElement(s);js.id\u003did;js.src\u003dp+\u0027://platform.twitter.com/widgets.js\u0027;fjs.parentNode.insertBefore(js,fjs);}}(document, \u0027script\u0027, \u0027twitter-wjs\u0027);\u003c/script\u003e\n\u003cbr /\u003eOr play \u003ca href\u003d\"http://ipv6bingo.com\"\u003eIPv6 Excuse Bingo\u003c/a\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547808539190_1032794678",
+      "id": "20190118-104859_960293953",
+      "dateCreated": "2019-01-18 10:48:59.190",
+      "dateStarted": "2019-01-18 10:57:10.193",
+      "dateFinished": "2019-01-18 10:57:11.819",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sh\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-18 10:57:11.894",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1547808820446_-816003763",
+      "id": "20190118-105340_4889439",
+      "dateCreated": "2019-01-18 10:53:40.447",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Demo / Zeppelin / Shell",
+  "id": "2DZZT3BUJ",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "md:shared_process": [],
+    "sh:shared_process": []
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}
