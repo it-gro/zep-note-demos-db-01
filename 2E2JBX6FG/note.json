@@ -147,7 +147,7 @@
     {
       "text": "%sh\necho -e \"\"\"%table\n$(ps -Af | sed -e \u0027s/\\ \\+/\\t/g;\u0027) \n\"\"\"\n",
       "user": "admin",
-      "dateUpdated": "2019-01-18 13:26:57.243",
+      "dateUpdated": "2019-01-18 14:39:28.425",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
