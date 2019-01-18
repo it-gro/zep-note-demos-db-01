@@ -2,8 +2,8 @@
   "paragraphs": [
     {
       "text": "%md\n## PostgreSQL \n* https://zeppelin.apache.org/docs/0.8.0/interpreter/jdbc.html\n* https://zeppelin.apache.org/docs/0.8.0/interpreter/jdbc.html#postgres\n* https://zeppelin.apache.org/docs/0.6.2/interpreter/jdbc.html#multiple-connections\n* https://www.postgresql.org/docs/\n* https://www.postgresql.org/docs/10/tutorial.html\n\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 14:38:45.692",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:37.138",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -35,15 +35,15 @@
       "jobName": "paragraph_1547818132537_992532218",
       "id": "20190118-112614_550926195",
       "dateCreated": "2019-01-18 13:28:52.537",
-      "dateStarted": "2019-01-18 14:38:45.709",
-      "dateFinished": "2019-01-18 14:38:45.715",
+      "dateStarted": "2019-01-18 14:56:37.166",
+      "dateFinished": "2019-01-18 14:56:37.187",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n\n# PSQL - JDBC Konfiguration\n\n* Wichtig:  einen *neuen* JDBC Interpreter erstellen\n\n![Create](https://github.com/it-gro/zep-note-demos-db-01/raw/master/img/psql_driver_01.jpg)\n\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 14:38:45.809",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:37.258",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -75,15 +75,15 @@
       "jobName": "paragraph_1547818132538_-1888320436",
       "id": "20190118-112644_72007333",
       "dateCreated": "2019-01-18 13:28:52.538",
-      "dateStarted": "2019-01-18 14:38:45.826",
-      "dateFinished": "2019-01-18 14:38:45.832",
+      "dateStarted": "2019-01-18 14:56:37.287",
+      "dateFinished": "2019-01-18 14:56:37.293",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n\n* Default User\n```text\ndefault.user               myadmin\ndefault.password           dbAdmin\n```\n\n* JDBC Treiber\nDependencies, artifact \n```text\n/usr/share/java/postgresql.jar\n```\n\n* Es düfen keine Punkte `.` in den Bezeichnern verwendet werden\n\n* weitere Verbindungen\n```text\nsb-db-01_myadmin.driver             com.mysql.jdbc.Driver\nsb-db-01_myadmin.url                jdbc:postgresql://localhost:5432/\nsb-db-01_myadmin.user               myadmin\nsb-db-01_myadmin.password           dbAdmin\nsb-db-01_pagila_myadmin.driver      com.mysql.jdbc.Driver\nsb-db-01_pagila_myadmin.url         jdbc:postgresql://localhost:5432/pagila\nsb-db-01_pagila_myadmin.user        myadmin\nsb-db-01_pagila_myadmin.password    dbAdmin\n```",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 14:38:45.926",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:37.385",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -115,15 +115,15 @@
       "jobName": "paragraph_1547818132539_2073732516",
       "id": "20190118-130035_567659060",
       "dateCreated": "2019-01-18 13:28:52.539",
-      "dateStarted": "2019-01-18 14:38:45.961",
-      "dateFinished": "2019-01-18 14:38:46.010",
+      "dateStarted": "2019-01-18 14:56:37.410",
+      "dateFinished": "2019-01-18 14:56:37.430",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n\n## Config-File\n\nDie Angaben werden automatisch in `conf/interpreter.json` geschrieben\n\n\n``` json\n        \"sb-db-01_myadmin.driver\": {\n          \"name\": \"sb-db-01_myadmin.driver\",\n          \"value\": \"org.postgresql.Driver\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_myadmin.url\": {\n          \"name\": \"sb-db-01_myadmin.url\",\n          \"value\": \"jdbc:postgresql://localhost:5432/\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_myadmin.user\": {\n          \"name\": \"sb-db-01_myadmin.user\",\n          \"value\": \"myadmin\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_myadmin.password\": {\n          \"name\": \"sb-db-01_myadmin.password\",\n          \"value\": \"dbAdmin\",\n          \"type\": \"password\"\n        },\n\n        \"sb-db-01_pagila_myadmin.driver\": {\n          \"name\": \"sb-db-01_pagila_myadmin.driver\",\n          \"value\": \"org.postgresql.Driver\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_pagila_myadmin.url\": {\n          \"name\": \"sb-db-01_pagila_myadmin.url\",\n          \"value\": \"jdbc:postgresql://localhost:5432/pagila\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_pagila_myadmin.user\": {\n          \"name\": \"sb-db-01_pagila_myadmin.user\",\n          \"value\": \"myadmin\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_pagila_myadmin.password\": {\n          \"name\": \"sb-db-01_pagila_myadmin.password\",\n          \"value\": \"dbAdmin\",\n          \"type\": \"password\"\n        },\n\n```\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 14:38:46.048",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:37.509",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -185,15 +185,15 @@
       "jobName": "paragraph_1547818132539_1645423189",
       "id": "20190118-112741_203586440",
       "dateCreated": "2019-01-18 13:28:52.539",
-      "dateStarted": "2019-01-18 14:38:46.071",
-      "dateFinished": "2019-01-18 14:38:46.079",
+      "dateStarted": "2019-01-18 14:56:37.530",
+      "dateFinished": "2019-01-18 14:56:37.558",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n\n# PostgreSQL - \"Verbindungskontrolle\"",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 14:38:46.170",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:37.630",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -225,15 +225,15 @@
       "jobName": "paragraph_1547818132539_-755251778",
       "id": "20190118-131332_1408497385",
       "dateCreated": "2019-01-18 13:28:52.539",
-      "dateStarted": "2019-01-18 14:38:46.189",
-      "dateFinished": "2019-01-18 14:38:46.198",
+      "dateStarted": "2019-01-18 14:56:37.653",
+      "dateFinished": "2019-01-18 14:56:37.659",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%psql\nSELECT datname FROM pg_database;\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 14:38:46.288",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:37.753",
       "config": {
         "editorSetting": {
           "language": "sql",
@@ -292,15 +292,15 @@
       "jobName": "paragraph_1547818132539_-936582676",
       "id": "20190118-131502_959092684",
       "dateCreated": "2019-01-18 13:28:52.539",
-      "dateStarted": "2019-01-18 14:38:46.311",
-      "dateFinished": "2019-01-18 14:38:46.320",
+      "dateStarted": "2019-01-18 14:56:37.777",
+      "dateFinished": "2019-01-18 14:56:40.504",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%psql\nSELECT * FROM pg_catalog.pg_tables;\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 14:38:46.411",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:40.581",
       "config": {
         "editorSetting": {
           "language": "sql",
@@ -367,15 +367,15 @@
       "jobName": "paragraph_1547818132540_1345601053",
       "id": "20190118-120455_520557514",
       "dateCreated": "2019-01-18 13:28:52.540",
-      "dateStarted": "2019-01-18 14:38:46.433",
-      "dateFinished": "2019-01-18 14:38:46.456",
+      "dateStarted": "2019-01-18 14:56:40.697",
+      "dateFinished": "2019-01-18 14:56:40.783",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%psql\nSELECT * FROM oracle_scott.emp LIMIT 10;",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 14:38:46.532",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:40.796",
       "config": {
         "editorSetting": {
           "language": "sql",
@@ -441,15 +441,15 @@
       "jobName": "paragraph_1547818132540_-687160471",
       "id": "20190118-121035_668392296",
       "dateCreated": "2019-01-18 13:28:52.540",
-      "dateStarted": "2019-01-18 14:38:46.555",
-      "dateFinished": "2019-01-18 14:38:46.573",
+      "dateStarted": "2019-01-18 14:56:40.873",
+      "dateFinished": "2019-01-18 14:56:40.920",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%psql(sb-db-01_pagila_myadmin)\nSELECT * FROM pg_catalog.pg_tables;\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 14:38:46.654",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:40.962",
       "config": {
         "editorSetting": {
           "language": "sql",
@@ -515,15 +515,15 @@
       "jobName": "paragraph_1547818132540_-1651187848",
       "id": "20190118-125848_1405174515",
       "dateCreated": "2019-01-18 13:28:52.540",
-      "dateStarted": "2019-01-18 14:38:46.674",
-      "dateFinished": "2019-01-18 14:38:46.692",
+      "dateStarted": "2019-01-18 14:56:40.990",
+      "dateFinished": "2019-01-18 14:56:41.042",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%psql(sb-db-01_pagila_myadmin)\nSELECT * FROM rental LIMIT 10;\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 14:38:46.773",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:41.087",
       "config": {
         "editorSetting": {
           "language": "sql",
@@ -588,15 +588,15 @@
       "jobName": "paragraph_1547818132541_466306517",
       "id": "20190118-125907_360311315",
       "dateCreated": "2019-01-18 13:28:52.541",
-      "dateStarted": "2019-01-18 14:38:46.792",
-      "dateFinished": "2019-01-18 14:38:46.800",
+      "dateStarted": "2019-01-18 14:56:41.118",
+      "dateFinished": "2019-01-18 14:56:41.149",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%mysql\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 14:38:46.892",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:41.218",
       "config": {
         "editorSetting": {
           "language": "sql",
