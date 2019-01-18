@@ -1,0 +1,638 @@
+{
+  "paragraphs": [
+    {
+      "text": "%md\n## PostgreSQL \n* https://zeppelin.apache.org/docs/0.8.0/interpreter/jdbc.html\n* https://zeppelin.apache.org/docs/0.8.0/interpreter/jdbc.html#postgres\n* https://zeppelin.apache.org/docs/0.6.2/interpreter/jdbc.html#multiple-connections\n* https://www.postgresql.org/docs/\n* https://www.postgresql.org/docs/10/tutorial.html\n\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-18 14:38:45.692",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003ePostgreSQL\u003c/h2\u003e\n\u003cul\u003e\n  \u003cli\u003e\u003ca href\u003d\"https://zeppelin.apache.org/docs/0.8.0/interpreter/jdbc.html\"\u003ehttps://zeppelin.apache.org/docs/0.8.0/interpreter/jdbc.html\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href\u003d\"https://zeppelin.apache.org/docs/0.8.0/interpreter/jdbc.html#postgres\"\u003ehttps://zeppelin.apache.org/docs/0.8.0/interpreter/jdbc.html#postgres\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href\u003d\"https://zeppelin.apache.org/docs/0.6.2/interpreter/jdbc.html#multiple-connections\"\u003ehttps://zeppelin.apache.org/docs/0.6.2/interpreter/jdbc.html#multiple-connections\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href\u003d\"https://www.postgresql.org/docs/\"\u003ehttps://www.postgresql.org/docs/\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href\u003d\"https://www.postgresql.org/docs/10/tutorial.html\"\u003ehttps://www.postgresql.org/docs/10/tutorial.html\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547818132537_992532218",
+      "id": "20190118-112614_550926195",
+      "dateCreated": "2019-01-18 13:28:52.537",
+      "dateStarted": "2019-01-18 14:38:45.709",
+      "dateFinished": "2019-01-18 14:38:45.715",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n# PSQL - JDBC Konfiguration\n\n* Wichtig:  einen *neuen* JDBC Interpreter erstellen\n\n![Create](https://github.com/it-gro/zep-note-demos-db-01/raw/master/img/psql_driver_01.jpg)\n\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-18 14:38:45.809",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003ePSQL - JDBC Konfiguration\u003c/h1\u003e\n\u003cul\u003e\n  \u003cli\u003eWichtig: einen \u003cem\u003eneuen\u003c/em\u003e JDBC Interpreter erstellen\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cimg src\u003d\"https://github.com/it-gro/zep-note-demos-db-01/raw/master/img/psql_driver_01.jpg\" alt\u003d\"Create\" /\u003e\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547818132538_-1888320436",
+      "id": "20190118-112644_72007333",
+      "dateCreated": "2019-01-18 13:28:52.538",
+      "dateStarted": "2019-01-18 14:38:45.826",
+      "dateFinished": "2019-01-18 14:38:45.832",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n* Default User\n```text\ndefault.user               myadmin\ndefault.password           dbAdmin\n```\n\n* JDBC Treiber\nDependencies, artifact \n```text\n/usr/share/java/postgresql.jar\n```\n\n* Es düfen keine Punkte `.` in den Bezeichnern verwendet werden\n\n* weitere Verbindungen\n```text\nsb-db-01_myadmin.driver             com.mysql.jdbc.Driver\nsb-db-01_myadmin.url                jdbc:postgresql://localhost:5432/\nsb-db-01_myadmin.user               myadmin\nsb-db-01_myadmin.password           dbAdmin\nsb-db-01_pagila_myadmin.driver      com.mysql.jdbc.Driver\nsb-db-01_pagila_myadmin.url         jdbc:postgresql://localhost:5432/pagila\nsb-db-01_pagila_myadmin.user        myadmin\nsb-db-01_pagila_myadmin.password    dbAdmin\n```",
+      "user": "admin",
+      "dateUpdated": "2019-01-18 14:38:45.926",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cul\u003e\n  \u003cli\u003e\n  \u003cp\u003e\n  \u003cp\u003eDefault User\u003c/p\u003e\n  \u003cpre\u003e\u003ccode class\u003d\"text\"\u003edefault.user               myadmin\ndefault.password           dbAdmin\n\u003c/code\u003e\u003c/pre\u003e\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eJDBC Treiber\u003cbr/\u003eDependencies, artifact \u003c/p\u003e\n  \u003cpre\u003e\u003ccode class\u003d\"text\"\u003e/usr/share/java/postgresql.jar\n\u003c/code\u003e\u003c/pre\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eEs düfen keine Punkte \u003ccode\u003e.\u003c/code\u003e in den Bezeichnern verwendet werden\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eweitere Verbindungen\u003c/p\u003e\n  \u003cpre\u003e\u003ccode class\u003d\"text\"\u003esb-db-01_myadmin.driver             com.mysql.jdbc.Driver\nsb-db-01_myadmin.url                jdbc:postgresql://localhost:5432/\nsb-db-01_myadmin.user               myadmin\nsb-db-01_myadmin.password           dbAdmin\nsb-db-01_pagila_myadmin.driver      com.mysql.jdbc.Driver\nsb-db-01_pagila_myadmin.url         jdbc:postgresql://localhost:5432/pagila\nsb-db-01_pagila_myadmin.user        myadmin\nsb-db-01_pagila_myadmin.password    dbAdmin\n\u003c/code\u003e\u003c/pre\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547818132539_2073732516",
+      "id": "20190118-130035_567659060",
+      "dateCreated": "2019-01-18 13:28:52.539",
+      "dateStarted": "2019-01-18 14:38:45.961",
+      "dateFinished": "2019-01-18 14:38:46.010",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n## Config-File\n\nDie Angaben werden automatisch in `conf/interpreter.json` geschrieben\n\n\n``` json\n        \"sb-db-01_myadmin.driver\": {\n          \"name\": \"sb-db-01_myadmin.driver\",\n          \"value\": \"org.postgresql.Driver\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_myadmin.url\": {\n          \"name\": \"sb-db-01_myadmin.url\",\n          \"value\": \"jdbc:postgresql://localhost:5432/\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_myadmin.user\": {\n          \"name\": \"sb-db-01_myadmin.user\",\n          \"value\": \"myadmin\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_myadmin.password\": {\n          \"name\": \"sb-db-01_myadmin.password\",\n          \"value\": \"dbAdmin\",\n          \"type\": \"password\"\n        },\n\n        \"sb-db-01_pagila_myadmin.driver\": {\n          \"name\": \"sb-db-01_pagila_myadmin.driver\",\n          \"value\": \"org.postgresql.Driver\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_pagila_myadmin.url\": {\n          \"name\": \"sb-db-01_pagila_myadmin.url\",\n          \"value\": \"jdbc:postgresql://localhost:5432/pagila\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_pagila_myadmin.user\": {\n          \"name\": \"sb-db-01_pagila_myadmin.user\",\n          \"value\": \"myadmin\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_pagila_myadmin.password\": {\n          \"name\": \"sb-db-01_pagila_myadmin.password\",\n          \"value\": \"dbAdmin\",\n          \"type\": \"password\"\n        },\n\n```\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-18 14:38:46.048",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "current_user()": "string",
+                      "@@hostname": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eConfig-File\u003c/h2\u003e\n\u003cp\u003eDie Angaben werden automatisch in \u003ccode\u003econf/interpreter.json\u003c/code\u003e geschrieben\u003c/p\u003e\n\u003cpre\u003e\u003ccode class\u003d\"json\"\u003e        \u0026quot;sb-db-01_myadmin.driver\u0026quot;: {\n          \u0026quot;name\u0026quot;: \u0026quot;sb-db-01_myadmin.driver\u0026quot;,\n          \u0026quot;value\u0026quot;: \u0026quot;org.postgresql.Driver\u0026quot;,\n          \u0026quot;type\u0026quot;: \u0026quot;textarea\u0026quot;\n        },\n        \u0026quot;sb-db-01_myadmin.url\u0026quot;: {\n          \u0026quot;name\u0026quot;: \u0026quot;sb-db-01_myadmin.url\u0026quot;,\n          \u0026quot;value\u0026quot;: \u0026quot;jdbc:postgresql://localhost:5432/\u0026quot;,\n          \u0026quot;type\u0026quot;: \u0026quot;textarea\u0026quot;\n        },\n        \u0026quot;sb-db-01_myadmin.user\u0026quot;: {\n          \u0026quot;name\u0026quot;: \u0026quot;sb-db-01_myadmin.user\u0026quot;,\n          \u0026quot;value\u0026quot;: \u0026quot;myadmin\u0026quot;,\n          \u0026quot;type\u0026quot;: \u0026quot;textarea\u0026quot;\n        },\n        \u0026quot;sb-db-01_myadmin.password\u0026quot;: {\n          \u0026quot;name\u0026quot;: \u0026quot;sb-db-01_myadmin.password\u0026quot;,\n          \u0026quot;value\u0026quot;: \u0026quot;dbAdmin\u0026quot;,\n          \u0026quot;type\u0026quot;: \u0026quot;password\u0026quot;\n        },\n\n        \u0026quot;sb-db-01_pagila_myadmin.driver\u0026quot;: {\n          \u0026quot;name\u0026quot;: \u0026quot;sb-db-01_pagila_myadmin.driver\u0026quot;,\n          \u0026quot;value\u0026quot;: \u0026quot;org.postgresql.Driver\u0026quot;,\n          \u0026quot;type\u0026quot;: \u0026quot;textarea\u0026quot;\n        },\n        \u0026quot;sb-db-01_pagila_myadmin.url\u0026quot;: {\n          \u0026quot;name\u0026quot;: \u0026quot;sb-db-01_pagila_myadmin.url\u0026quot;,\n          \u0026quot;value\u0026quot;: \u0026quot;jdbc:postgresql://localhost:5432/pagila\u0026quot;,\n          \u0026quot;type\u0026quot;: \u0026quot;textarea\u0026quot;\n        },\n        \u0026quot;sb-db-01_pagila_myadmin.user\u0026quot;: {\n          \u0026quot;name\u0026quot;: \u0026quot;sb-db-01_pagila_myadmin.user\u0026quot;,\n          \u0026quot;value\u0026quot;: \u0026quot;myadmin\u0026quot;,\n          \u0026quot;type\u0026quot;: \u0026quot;textarea\u0026quot;\n        },\n        \u0026quot;sb-db-01_pagila_myadmin.password\u0026quot;: {\n          \u0026quot;name\u0026quot;: \u0026quot;sb-db-01_pagila_myadmin.password\u0026quot;,\n          \u0026quot;value\u0026quot;: \u0026quot;dbAdmin\u0026quot;,\n          \u0026quot;type\u0026quot;: \u0026quot;password\u0026quot;\n        },\n\n\u003c/code\u003e\u003c/pre\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547818132539_1645423189",
+      "id": "20190118-112741_203586440",
+      "dateCreated": "2019-01-18 13:28:52.539",
+      "dateStarted": "2019-01-18 14:38:46.071",
+      "dateFinished": "2019-01-18 14:38:46.079",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n# PostgreSQL - \"Verbindungskontrolle\"",
+      "user": "admin",
+      "dateUpdated": "2019-01-18 14:38:46.170",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003ePostgreSQL - \u0026ldquo;Verbindungskontrolle\u0026rdquo;\u003c/h1\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547818132539_-755251778",
+      "id": "20190118-131332_1408497385",
+      "dateCreated": "2019-01-18 13:28:52.539",
+      "dateStarted": "2019-01-18 14:38:46.189",
+      "dateFinished": "2019-01-18 14:38:46.198",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%psql\nSELECT datname FROM pg_database;\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-18 14:38:46.288",
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9.0,
+        "editorHide": false,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "datname": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "datname\npostgres\nmyadmin\ntemplate1\ntemplate0\ndvdrental\ndellstore2\npagila\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547818132539_-936582676",
+      "id": "20190118-131502_959092684",
+      "dateCreated": "2019-01-18 13:28:52.539",
+      "dateStarted": "2019-01-18 14:38:46.311",
+      "dateFinished": "2019-01-18 14:38:46.320",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%psql\nSELECT * FROM pg_catalog.pg_tables;\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-18 14:38:46.411",
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9.0,
+        "editorHide": false,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "schemaname": "string",
+                      "tablename": "string",
+                      "tableowner": "string",
+                      "tablespace": "string",
+                      "hasindexes": "string",
+                      "hasrules": "string",
+                      "hastriggers": "string",
+                      "rowsecurity": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "schemaname\ttablename\ttableowner\ttablespace\thasindexes\thasrules\thastriggers\trowsecurity\noracle_scott\temp\tmyadmin\tnull\tf\tf\tf\tf\noracle_scott\tdept\tmyadmin\tnull\tf\tf\tf\tf\noracle_scott\tbonus\tmyadmin\tnull\tf\tf\tf\tf\noracle_scott\tsalgrade\tmyadmin\tnull\tf\tf\tf\tf\nworld\tcity\tmyadmin\tnull\tt\tf\tt\tf\nworld\tcountry\tmyadmin\tnull\tt\tf\tt\tf\nworld\tcountrylanguage\tmyadmin\tnull\tt\tf\tt\tf\npg_catalog\tpg_statistic\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_type\tpostgres\tnull\tt\tf\tf\tf\noracle_hr\tregions\tmyadmin\tnull\tt\tf\tt\tf\noracle_hr\tcountries\tmyadmin\tnull\tt\tf\tt\tf\npg_catalog\tpg_policy\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_authid\tpostgres\tpg_global\tt\tf\tf\tf\noracle_hr\tlocations\tmyadmin\tnull\tt\tf\tt\tf\noracle_hr\temployees\tmyadmin\tnull\tt\tf\tt\tf\noracle_hr\tdepartments\tmyadmin\tnull\tt\tf\tt\tf\noracle_hr\tjobs\tmyadmin\tnull\tt\tf\tt\tf\noracle_hr\tjob_history\tmyadmin\tnull\tt\tf\tt\tf\niso_3166\tcountry\tmyadmin\tnull\tt\tf\tt\tf\niso_3166\tsubcountry\tmyadmin\tnull\tt\tf\tt\tf\npg_catalog\tpg_user_mapping\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_subscription\tpostgres\tpg_global\tt\tf\tf\tf\npg_catalog\tpg_attribute\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_proc\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_class\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_attrdef\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_constraint\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_inherits\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_index\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_operator\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_opfamily\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_opclass\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_am\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_amop\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_amproc\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_language\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_largeobject_metadata\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_aggregate\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_statistic_ext\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_rewrite\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_trigger\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_event_trigger\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_description\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_cast\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_enum\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_namespace\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_conversion\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_depend\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_database\tpostgres\tpg_global\tt\tf\tf\tf\npg_catalog\tpg_db_role_setting\tpostgres\tpg_global\tt\tf\tf\tf\npg_catalog\tpg_tablespace\tpostgres\tpg_global\tt\tf\tf\tf\npg_catalog\tpg_pltemplate\tpostgres\tpg_global\tt\tf\tf\tf\npg_catalog\tpg_auth_members\tpostgres\tpg_global\tt\tf\tf\tf\npg_catalog\tpg_shdepend\tpostgres\tpg_global\tt\tf\tf\tf\npg_catalog\tpg_shdescription\tpostgres\tpg_global\tt\tf\tf\tf\npg_catalog\tpg_ts_config\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_ts_config_map\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_ts_dict\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_ts_parser\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_ts_template\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_extension\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_foreign_data_wrapper\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_foreign_server\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_foreign_table\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_replication_origin\tpostgres\tpg_global\tt\tf\tf\tf\npg_catalog\tpg_default_acl\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_init_privs\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_seclabel\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_shseclabel\tpostgres\tpg_global\tt\tf\tf\tf\npg_catalog\tpg_collation\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_partitioned_table\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_range\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_transform\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_sequence\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_publication\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_publication_rel\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_subscription_rel\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_largeobject\tpostgres\tnull\tt\tf\tf\tf\ninformation_schema\tsql_parts\tpostgres\tnull\tf\tf\tf\tf\ninformation_schema\tsql_languages\tpostgres\tnull\tf\tf\tf\tf\ninformation_schema\tsql_features\tpostgres\tnull\tf\tf\tf\tf\ninformation_schema\tsql_implementation_info\tpostgres\tnull\tf\tf\tf\tf\ninformation_schema\tsql_packages\tpostgres\tnull\tf\tf\tf\tf\ninformation_schema\tsql_sizing\tpostgres\tnull\tf\tf\tf\tf\ninformation_schema\tsql_sizing_profiles\tpostgres\tnull\tf\tf\tf\tf\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547818132540_1345601053",
+      "id": "20190118-120455_520557514",
+      "dateCreated": "2019-01-18 13:28:52.540",
+      "dateStarted": "2019-01-18 14:38:46.433",
+      "dateFinished": "2019-01-18 14:38:46.456",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%psql\nSELECT * FROM oracle_scott.emp LIMIT 10;",
+      "user": "admin",
+      "dateUpdated": "2019-01-18 14:38:46.532",
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9.0,
+        "editorHide": false,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "empno": "string",
+                      "ename": "string",
+                      "job": "string",
+                      "mgr": "string",
+                      "hiredate": "string",
+                      "sal": "string",
+                      "comm": "string",
+                      "deptno": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "empno\tename\tjob\tmgr\thiredate\tsal\tcomm\tdeptno\n7369\tSMITH\tCLERK\t7902\t1980-12-17\t800\tnull\t20\n7499\tALLEN\tSALESMAN\t7698\t1981-02-20\t1600\t300\t30\n7521\tWARD\tSALESMAN\t7698\t1981-02-22\t1250\t500\t30\n7566\tJONES\tMANAGER\t7839\t1981-04-02\t2975\tnull\t20\n7654\tMARTIN\tSALESMAN\t7698\t1981-09-28\t1250\t1400\t30\n7698\tBLAKE\tMANAGER\t7839\t1981-05-01\t2850\tnull\t30\n7782\tCLARK\tMANAGER\t7839\t1981-06-09\t2450\tnull\t10\n7788\tSCOTT\tANALYST\t7566\t1982-12-09\t3000\tnull\t20\n7839\tKING\tPRESIDENT\tnull\t1981-11-17\t5000\tnull\t10\n7844\tTURNER\tSALESMAN\t7698\t1981-09-08\t1500\t0\t30\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547818132540_-687160471",
+      "id": "20190118-121035_668392296",
+      "dateCreated": "2019-01-18 13:28:52.540",
+      "dateStarted": "2019-01-18 14:38:46.555",
+      "dateFinished": "2019-01-18 14:38:46.573",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%psql(sb-db-01_pagila_myadmin)\nSELECT * FROM pg_catalog.pg_tables;\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-18 14:38:46.654",
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9.0,
+        "editorHide": false,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "schemaname": "string",
+                      "tablename": "string",
+                      "tableowner": "string",
+                      "tablespace": "string",
+                      "hasindexes": "string",
+                      "hasrules": "string",
+                      "hastriggers": "string",
+                      "rowsecurity": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "schemaname\ttablename\ttableowner\ttablespace\thasindexes\thasrules\thastriggers\trowsecurity\npublic\tcountry\tpostgres\tnull\tt\tf\tt\tf\npublic\tfilm\tpostgres\tnull\tt\tf\tt\tf\npublic\tlanguage\tpostgres\tnull\tt\tf\tt\tf\npublic\tcustomer\tpostgres\tnull\tt\tf\tt\tf\npublic\tactor\tpostgres\tnull\tt\tf\tt\tf\npublic\tstaff\tpostgres\tnull\tt\tf\tt\tf\npublic\tcategory\tpostgres\tnull\tt\tf\tt\tf\npublic\tfilm_category\tpostgres\tnull\tt\tf\tt\tf\npg_catalog\tpg_statistic\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_type\tpostgres\tnull\tt\tf\tf\tf\npublic\tinventory\tpostgres\tnull\tt\tf\tt\tf\npublic\tpayment_p2007_05\tpostgres\tnull\tt\tf\tt\tf\npublic\tpayment_p2007_03\tpostgres\tnull\tt\tf\tt\tf\npublic\tpayment_p2007_04\tpostgres\tnull\tt\tf\tt\tf\npublic\tpayment_p2007_06\tpostgres\tnull\tt\tf\tt\tf\npublic\trental\tpostgres\tnull\tt\tf\tt\tf\npublic\tpayment_p2007_02\tpostgres\tnull\tt\tf\tt\tf\npublic\tpayment_p2007_01\tpostgres\tnull\tt\tf\tt\tf\npublic\tfilm_actor\tpostgres\tnull\tt\tf\tt\tf\npublic\tpayment\tpostgres\tnull\tt\tt\tt\tf\npg_catalog\tpg_policy\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_authid\tpostgres\tpg_global\tt\tf\tf\tf\npublic\tcity\tpostgres\tnull\tt\tf\tt\tf\npublic\tstore\tpostgres\tnull\tt\tf\tt\tf\npublic\taddress\tpostgres\tnull\tt\tf\tt\tf\npg_catalog\tpg_user_mapping\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_subscription\tpostgres\tpg_global\tt\tf\tf\tf\npg_catalog\tpg_attribute\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_proc\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_class\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_attrdef\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_constraint\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_inherits\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_index\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_operator\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_opfamily\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_opclass\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_am\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_amop\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_amproc\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_language\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_largeobject_metadata\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_aggregate\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_statistic_ext\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_rewrite\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_trigger\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_event_trigger\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_description\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_cast\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_enum\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_namespace\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_conversion\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_depend\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_database\tpostgres\tpg_global\tt\tf\tf\tf\npg_catalog\tpg_db_role_setting\tpostgres\tpg_global\tt\tf\tf\tf\npg_catalog\tpg_tablespace\tpostgres\tpg_global\tt\tf\tf\tf\npg_catalog\tpg_pltemplate\tpostgres\tpg_global\tt\tf\tf\tf\npg_catalog\tpg_auth_members\tpostgres\tpg_global\tt\tf\tf\tf\npg_catalog\tpg_shdepend\tpostgres\tpg_global\tt\tf\tf\tf\npg_catalog\tpg_shdescription\tpostgres\tpg_global\tt\tf\tf\tf\npg_catalog\tpg_ts_config\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_ts_config_map\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_ts_dict\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_ts_parser\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_ts_template\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_extension\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_foreign_data_wrapper\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_foreign_server\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_foreign_table\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_replication_origin\tpostgres\tpg_global\tt\tf\tf\tf\npg_catalog\tpg_default_acl\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_init_privs\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_seclabel\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_shseclabel\tpostgres\tpg_global\tt\tf\tf\tf\npg_catalog\tpg_collation\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_partitioned_table\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_range\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_transform\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_sequence\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_publication\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_publication_rel\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_subscription_rel\tpostgres\tnull\tt\tf\tf\tf\npg_catalog\tpg_largeobject\tpostgres\tnull\tt\tf\tf\tf\ninformation_schema\tsql_parts\tpostgres\tnull\tf\tf\tf\tf\ninformation_schema\tsql_languages\tpostgres\tnull\tf\tf\tf\tf\ninformation_schema\tsql_features\tpostgres\tnull\tf\tf\tf\tf\ninformation_schema\tsql_implementation_info\tpostgres\tnull\tf\tf\tf\tf\ninformation_schema\tsql_packages\tpostgres\tnull\tf\tf\tf\tf\ninformation_schema\tsql_sizing\tpostgres\tnull\tf\tf\tf\tf\ninformation_schema\tsql_sizing_profiles\tpostgres\tnull\tf\tf\tf\tf\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547818132540_-1651187848",
+      "id": "20190118-125848_1405174515",
+      "dateCreated": "2019-01-18 13:28:52.540",
+      "dateStarted": "2019-01-18 14:38:46.674",
+      "dateFinished": "2019-01-18 14:38:46.692",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%psql(sb-db-01_pagila_myadmin)\nSELECT * FROM rental LIMIT 10;\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-18 14:38:46.773",
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9.0,
+        "editorHide": false,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "rental_id": "string",
+                      "rental_date": "string",
+                      "inventory_id": "string",
+                      "customer_id": "string",
+                      "return_date": "string",
+                      "staff_id": "string",
+                      "last_update": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "rental_id\trental_date\tinventory_id\tcustomer_id\treturn_date\tstaff_id\tlast_update\n2\t2005-05-24 22:54:33\t1525\t459\t2005-05-28 19:40:33\t1\t2006-02-16 02:30:53\n3\t2005-05-24 23:03:39\t1711\t408\t2005-06-01 22:12:39\t1\t2006-02-16 02:30:53\n4\t2005-05-24 23:04:41\t2452\t333\t2005-06-03 01:43:41\t2\t2006-02-16 02:30:53\n5\t2005-05-24 23:05:21\t2079\t222\t2005-06-02 04:33:21\t1\t2006-02-16 02:30:53\n6\t2005-05-24 23:08:07\t2792\t549\t2005-05-27 01:32:07\t1\t2006-02-16 02:30:53\n7\t2005-05-24 23:11:53\t3995\t269\t2005-05-29 20:34:53\t2\t2006-02-16 02:30:53\n8\t2005-05-24 23:31:46\t2346\t239\t2005-05-27 23:33:46\t2\t2006-02-16 02:30:53\n9\t2005-05-25 00:00:40\t2580\t126\t2005-05-28 00:22:40\t1\t2006-02-16 02:30:53\n10\t2005-05-25 00:02:21\t1824\t399\t2005-05-31 22:44:21\t2\t2006-02-16 02:30:53\n11\t2005-05-25 00:09:02\t4443\t142\t2005-06-02 20:56:02\t2\t2006-02-16 02:30:53\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547818132541_466306517",
+      "id": "20190118-125907_360311315",
+      "dateCreated": "2019-01-18 13:28:52.541",
+      "dateStarted": "2019-01-18 14:38:46.792",
+      "dateFinished": "2019-01-18 14:38:46.800",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%mysql\n",
+      "user": "admin",
+      "dateUpdated": "2019-01-18 14:38:46.892",
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1547818132541_-101802860",
+      "id": "20190118-131830_397081121",
+      "dateCreated": "2019-01-18 13:28:52.541",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "How To / Zeppelin / JDBC / PostgreSQL",
+  "id": "2E3J3C9H6",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "md:shared_process": [],
+    "psql:shared_process": []
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}
