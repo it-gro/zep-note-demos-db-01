@@ -1,0 +1,188 @@
+{
+  "paragraphs": [
+    {
+      "text": "%md\n## JDBC Konfiguratin via `%.conf`\n\n* Allenfall mus der JDBC Interpreter vorher via [Interpreters](#/interpreter) neu gestartet werde\n* Es werden nur die vom `default` abweichenden Konfigurationen benötigt ",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 19:15:35.658",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eJDBC Konfiguratin via \u003ccode\u003e%.conf\u003c/code\u003e\u003c/h2\u003e\n\u003cul\u003e\n  \u003cli\u003eAllenfall mus der JDBC Interpreter vorher via \u003ca href\u003d\"#/interpreter\"\u003eInterpreters\u003c/a\u003e neu gestartet werde\u003c/li\u003e\n  \u003cli\u003eEs werden nur die vom \u003ccode\u003edefault\u003c/code\u003e abweichenden Konfigurationen benötigt\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547838415632_680612917",
+      "id": "20190118-190655_2146775525",
+      "dateCreated": "2019-01-18 19:06:55.633",
+      "dateStarted": "2019-01-18 19:15:35.674",
+      "dateFinished": "2019-01-18 19:15:35.682",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%jdbc.conf\ndefault.driver             org.postgresql.Driver\ndefault.url                jdbc:postgresql://localhost:5432/dellstore2\ndefault.user               myadmin\ndefault.password           dbAdmin\n",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 19:15:35.771",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "jobName": "paragraph_1547838451442_1332583860",
+      "id": "20190118-190731_767886858",
+      "dateCreated": "2019-01-18 19:07:31.442",
+      "dateStarted": "2019-01-18 19:15:35.781",
+      "dateFinished": "2019-01-18 19:15:35.785",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%jdbc\nSELECT *\n  FROM products\n  ORDER BY price\n  LIMIT 10\n  ",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 19:15:35.880",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "prod_id": "string",
+                      "category": "string",
+                      "title": "string",
+                      "actor": "string",
+                      "price": "string",
+                      "special": "string",
+                      "common_prod_id": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "prod_id\tcategory\ttitle\tactor\tprice\tspecial\tcommon_prod_id\n133\t8\tACADEMY CHAMBER\tPEARL PRESLEY\t9.99\t0\t7365\n168\t12\tACADEMY COMANCHEROS\tKATHARINE HORNE\t9.99\t0\t1917\n131\t4\tACADEMY CENTER\tSYLVESTER HUSTON\t9.99\t0\t2449\n80\t13\tACADEMY BLANKET\tCHARLTON NICHOLSON\t9.99\t0\t6858\n129\t6\tACADEMY CAUSE\tANGELA GARBO\t9.99\t0\t4873\n72\t6\tACADEMY BILL\tMARLON SILVERSTONE\t9.99\t0\t7783\n78\t12\tACADEMY BLACKOUT\tMARISA FIELD\t9.99\t0\t8440\n111\t3\tACADEMY CADDYSHACK\tVAL DEAN\t9.99\t0\t1200\n10\t15\tACADEMY ALADDIN\tANNETTE FREEMAN\t9.99\t0\t631\n186\t3\tACADEMY CRAFT\tHELEN PFEIFFER\t9.99\t0\t8896\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547838519199_-1985077625",
+      "id": "20190118-190839_648586335",
+      "dateCreated": "2019-01-18 19:08:39.199",
+      "dateStarted": "2019-01-18 19:15:35.893",
+      "dateFinished": "2019-01-18 19:15:35.918",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%jdbc.conf\n",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 19:15:35.993",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1547838555798_561363956",
+      "id": "20190118-190915_237029825",
+      "dateCreated": "2019-01-18 19:09:15.798",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "How To / Zeppelin / JDBC / 1 .conf psql",
+  "id": "2E297ZG6P",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "md:shared_process": [],
+    "jdbc:shared_process": []
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}
