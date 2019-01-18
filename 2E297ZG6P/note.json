@@ -1,9 +1,9 @@
 {
   "paragraphs": [
     {
-      "text": "%md\n## JDBC Konfiguratin via `%.conf`\n\n* Allenfall mus der JDBC Interpreter vorher via [Interpreters](#/interpreter) neu gestartet werde\n* Es werden nur die vom `default` abweichenden Konfigurationen benötigt ",
+      "text": "%md\n## JDBC Konfiguratin via `%.conf`\n\n* Allenfall mus der JDBC Interpreter vorher via [Interpreters](#/interpreter) neu gestartet werde\n* Es werden nur die vom `default` abweichenden Konfigurationen benötigt \n \nDie JDBC Treiber-Dateien müssen in der JDBC Konfiguration ([Interpreters](#/interpreter)) angegeben werden:\nDependencies / artifact \n```\n/usr/share/java/postgresql.jar\n```\n\n* Es dürfen mehrere Treiber-Dateien abgeben werden (MySQL, PSQL, ...)",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 19:15:35.658",
+      "dateUpdated": "2019-01-18 19:29:48.535",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -15,7 +15,7 @@
           "completionSupport": false
         },
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "tableHide": false
       },
       "settings": {
@@ -27,7 +27,7 @@
         "msg": [
           {
             "type": "HTML",
-            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eJDBC Konfiguratin via \u003ccode\u003e%.conf\u003c/code\u003e\u003c/h2\u003e\n\u003cul\u003e\n  \u003cli\u003eAllenfall mus der JDBC Interpreter vorher via \u003ca href\u003d\"#/interpreter\"\u003eInterpreters\u003c/a\u003e neu gestartet werde\u003c/li\u003e\n  \u003cli\u003eEs werden nur die vom \u003ccode\u003edefault\u003c/code\u003e abweichenden Konfigurationen benötigt\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eJDBC Konfiguratin via \u003ccode\u003e%.conf\u003c/code\u003e\u003c/h2\u003e\n\u003cul\u003e\n  \u003cli\u003eAllenfall mus der JDBC Interpreter vorher via \u003ca href\u003d\"#/interpreter\"\u003eInterpreters\u003c/a\u003e neu gestartet werde\u003c/li\u003e\n  \u003cli\u003eEs werden nur die vom \u003ccode\u003edefault\u003c/code\u003e abweichenden Konfigurationen benötigt\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eDie JDBC Treiber-Dateien müssen in der JDBC Konfiguration (\u003ca href\u003d\"#/interpreter\"\u003eInterpreters\u003c/a\u003e) angegeben werden:\u003cbr/\u003eDependencies / artifact \u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e/usr/share/java/postgresql.jar\n\u003c/code\u003e\u003c/pre\u003e\n\u003cul\u003e\n  \u003cli\u003eEs dürfen mehrere Treiber-Dateien abgeben werden (MySQL, PSQL, \u0026hellip;)\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
           }
         ]
       },
@@ -35,15 +35,15 @@
       "jobName": "paragraph_1547838415632_680612917",
       "id": "20190118-190655_2146775525",
       "dateCreated": "2019-01-18 19:06:55.633",
-      "dateStarted": "2019-01-18 19:15:35.674",
-      "dateFinished": "2019-01-18 19:15:35.682",
+      "dateStarted": "2019-01-18 19:29:48.541",
+      "dateFinished": "2019-01-18 19:29:48.549",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%jdbc.conf\ndefault.driver             org.postgresql.Driver\ndefault.url                jdbc:postgresql://localhost:5432/dellstore2\ndefault.user               myadmin\ndefault.password           dbAdmin\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 19:15:35.771",
+      "dateUpdated": "2019-01-18 19:29:48.641",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -68,15 +68,15 @@
       "jobName": "paragraph_1547838451442_1332583860",
       "id": "20190118-190731_767886858",
       "dateCreated": "2019-01-18 19:07:31.442",
-      "dateStarted": "2019-01-18 19:15:35.781",
-      "dateFinished": "2019-01-18 19:15:35.785",
+      "dateStarted": "2019-01-18 19:29:48.648",
+      "dateFinished": "2019-01-18 19:29:48.651",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%jdbc\nSELECT *\n  FROM products\n  ORDER BY price\n  LIMIT 10\n  ",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 19:15:35.880",
+      "dateUpdated": "2019-01-18 19:29:48.748",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -140,15 +140,15 @@
       "jobName": "paragraph_1547838519199_-1985077625",
       "id": "20190118-190839_648586335",
       "dateCreated": "2019-01-18 19:08:39.199",
-      "dateStarted": "2019-01-18 19:15:35.893",
-      "dateFinished": "2019-01-18 19:15:35.918",
+      "dateStarted": "2019-01-18 19:29:48.754",
+      "dateFinished": "2019-01-18 19:29:48.776",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%jdbc.conf\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 19:15:35.993",
+      "dateUpdated": "2019-01-18 19:29:48.854",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
