@@ -1,0 +1,158 @@
+{
+  "paragraphs": [
+    {
+      "text": "%md\n## JDBC Konfiguratin via `%.conf`\n\n* Allenfall mus der JDBC Interpreter vorher via [Interpreters](#/interpreter) neu gestartet werde\n* Es werden nur die vom `default` abweichenden Konfigurationen benötigt \n\nDie JDBC Treiber-Dateien müssen in der JDBC Konfiguration ([Interpreters](#/interpreter)) angegeben werden:\nDependencies / artifact \n```\n/usr/share/java/postgresql.jar\n/usr/share/java/mysql.jar\n```\n",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 19:26:29.270",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eJDBC Konfiguratin via \u003ccode\u003e%.conf\u003c/code\u003e\u003c/h2\u003e\n\u003cul\u003e\n  \u003cli\u003eAllenfall mus der JDBC Interpreter vorher via \u003ca href\u003d\"#/interpreter\"\u003eInterpreters\u003c/a\u003e neu gestartet werde\u003c/li\u003e\n  \u003cli\u003eEs werden nur die vom \u003ccode\u003edefault\u003c/code\u003e abweichenden Konfigurationen benötigt\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eDie JDBC Treiber-Dateien müssen in der JDBC Konfiguration (\u003ca href\u003d\"#/interpreter\"\u003eInterpreters\u003c/a\u003e) angegeben werden:\u003cbr/\u003eDependencies / artifact \u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e/usr/share/java/postgresql.jar\n/usr/share/java/mysql.jar\n\u003c/code\u003e\u003c/pre\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547838953115_-467268626",
+      "id": "20190118-190655_2146775525",
+      "dateCreated": "2019-01-18 19:15:53.115",
+      "dateStarted": "2019-01-18 19:26:29.278",
+      "dateFinished": "2019-01-18 19:26:29.284",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%jdbc.conf\ndefault.driver             com.mysql.jdbc.Driver\ndefault.url                jdbc:mysql://localhost:3306/movielens_latest_small\ndefault.user               reader\ndefault.password           reader\n",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 19:26:29.377",
+      "config": {
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/text",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "jobName": "paragraph_1547838953116_-2021500228",
+      "id": "20190118-190731_767886858",
+      "dateCreated": "2019-01-18 19:15:53.116",
+      "dateStarted": "2019-01-18 19:26:29.386",
+      "dateFinished": "2019-01-18 19:26:29.390",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%jdbc\nSELECT *\n  FROM ratings\n  ORDER BY movieid, rating DESC, unix_timestamp DESC\n  LIMIT 100\n  ",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 19:26:29.486",
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9.0,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "userId": "string",
+                      "movieId": "string",
+                      "rating": "string",
+                      "unix_timestamp": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "userId\tmovieId\trating\tunix_timestamp\n471\t1\t5\t1496671820\n328\t1\t5\t1494210665\n380\t1\t5\t1493420345\n610\t1\t5\t1479542900\n247\t1\t5\t1467644119\n63\t1\t5\t1443199669\n341\t1\t5\t1439750939\n177\t1\t5\t1435533535\n533\t1\t5\t1424753740\n357\t1\t5\t1348610184\n220\t1\t5\t1230055565\n166\t1\t5\t1189980529\n573\t1\t5\t1186722182\n396\t1\t5\t1111688626\n275\t1\t5\t1049076484\n448\t1\t5\t1019126661\n453\t1\t5\t1005966797\n234\t1\t5\t1004409347\n367\t1\t5\t997811550\n57\t1\t5\t965796031\n96\t1\t5\t964772990\n587\t1\t5\t953137847\n201\t1\t5\t939801780\n304\t1\t5\t881428344\n364\t1\t5\t869443366\n171\t1\t5\t866904159\n559\t1\t5\t865095758\n71\t1\t5\t864737933\n389\t1\t5\t857934174\n456\t1\t5\t856883308\n151\t1\t5\t855947195\n451\t1\t5\t854089165\n270\t1\t5\t853918728\n269\t1\t5\t850865423\n206\t1\t5\t850763267\n31\t1\t5\t850466616\n240\t1\t5\t849122434\n43\t1\t5\t848993983\n347\t1\t5\t847645986\n229\t1\t5\t838144316\n273\t1\t5\t835861234\n411\t1\t5\t835532155\n584\t1\t5\t834987643\n46\t1\t5\t834787906\n145\t1\t5\t832105242\n40\t1\t5\t832058959\n353\t1\t5\t831939685\n98\t1\t4.5\t1532457849\n382\t1\t4.5\t1515162628\n159\t1\t4.5\t1508640172\n252\t1\t4.5\t1498284904\n73\t1\t4.5\t1464196374\n378\t1\t4.5\t1445347576\n282\t1\t4.5\t1378495714\n562\t1\t4.5\t1368893997\n460\t1\t4.5\t1359177505\n280\t1\t4.5\t1348435273\n484\t1\t4.5\t1342295949\n17\t1\t4.5\t1305696483\n254\t1\t4.5\t1180446553\n488\t1\t4.5\t1112382025\n7\t1\t4.5\t1106635946\n438\t1\t4.5\t1105650469\n169\t1\t4.5\t1059427918\n288\t1\t4.5\t1054568869\n596\t1\t4\t1535709666\n514\t1\t4\t1533872400\n601\t1\t4\t1521467801\n141\t1\t4\t1513130643\n443\t1\t4\t1501722482\n561\t1\t4\t1491094681\n550\t1\t4\t1488728441\n517\t1\t4\t1487954343\n525\t1\t4\t1476475973\n339\t1\t4\t1460183470\n534\t1\t4\t1459787997\n291\t1\t4\t1453051567\n509\t1\t4\t1435992343\n103\t1\t4\t1431954238\n332\t1\t4\t1352672340\n249\t1\t4\t1347317775\n86\t1\t4\t1344082549\n124\t1\t4\t1336584336\n330\t1\t4\t1285904910\n605\t1\t4\t1277097561\n434\t1\t4\t1270604402\n590\t1\t4\t1258420408\n78\t1\t4\t1252575124\n239\t1\t4\t1221158265\n292\t1\t4\t1219625000\n420\t1\t4\t1218207191\n137\t1\t4\t1204859907\n477\t1\t4\t1200939636\n359\t1\t4\t1198112023\n307\t1\t4\t1186160893\n570\t1\t4\t1181476989\n483\t1\t4\t1178293130\n161\t1\t4\t1176751765\n274\t1\t4\t1171410158\n399\t1\t4\t1167220428\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547838953116_-1752600531",
+      "id": "20190118-190839_648586335",
+      "dateCreated": "2019-01-18 19:15:53.116",
+      "dateStarted": "2019-01-18 19:26:29.494",
+      "dateFinished": "2019-01-18 19:26:32.292",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "How To / Zeppelin / JDBC / 1 .conf mysql",
+  "id": "2E17PW4ZE",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "md:shared_process": [],
+    "jdbc:shared_process": []
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}
