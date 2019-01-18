@@ -2,8 +2,8 @@
   "paragraphs": [
     {
       "text": "%md\n## MySQL \n* https://zeppelin.apache.org/docs/0.8.0/interpreter/jdbc.html\n* https://zeppelin.apache.org/docs/0.6.2/interpreter/jdbc.html#multiple-connections\n* https://dev.mysql.com/doc/refman/8.0/en/\n* https://dev.mysql.com/doc/refman/8.0/en/tutorial.html\n\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 13:24:49.320",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:11.651",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -35,15 +35,15 @@
       "jobName": "paragraph_1547810774602_-301779329",
       "id": "20190118-112614_550926195",
       "dateCreated": "2019-01-18 11:26:14.602",
-      "dateStarted": "2019-01-18 13:24:44.445",
-      "dateFinished": "2019-01-18 13:24:44.450",
+      "dateStarted": "2019-01-18 14:56:11.690",
+      "dateFinished": "2019-01-18 14:56:11.700",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n\n# MySQL - JDBC Konfiguration\n\n* Wichtig:  einen *neuen* JDBC Interpreter erstellen\n\n![Create](https://zeppelin.apache.org/docs/0.8.0/assets/themes/zeppelin/img/docs-img/click_create_button.png)\n![Name](https://zeppelin.apache.org/docs/0.8.0/assets/themes/zeppelin/img/docs-img/select_name_and_group.png)\n\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 13:24:49.332",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:11.782",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -75,15 +75,15 @@
       "jobName": "paragraph_1547810804750_-13941697",
       "id": "20190118-112644_72007333",
       "dateCreated": "2019-01-18 11:26:44.750",
-      "dateStarted": "2019-01-18 13:24:44.562",
-      "dateFinished": "2019-01-18 13:24:44.573",
+      "dateStarted": "2019-01-18 14:56:11.813",
+      "dateFinished": "2019-01-18 14:56:11.824",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n\n* Wechsel auf MySQL (statt default PostgreSQL)\n```text\ndefault.driver             com.mysql.jdbc.Driver\ndefault.url                jdbc:mysql://localhost:3306/\ndefault.user               reader\ndefault.password           reader\n```\n\n* JDBC Treiber\nDependencies, artifact \n```text\n/usr/share/java/mysql.jar\n```\n\n* Es düfen keine Punkte `.` in den Bezeichnern verwendet werden\n\n* weitere Verbindungen\n```text\nsb-db-01_reader.driver     com.mysql.jdbc.Driver\nsb-db-01_reader.url        jdbc:mysql://localhost:3306/\nsb-db-01_reader.user       reader\nsb-db-01_reader.password   reader\nsb-db-01_zepadmin.driver   com.mysql.jdbc.Driver\nsb-db-01_zepadmin.url      jdbc:mysql://localhost:3306/\nsb-db-01_zepadmin.user     zepadmin\nsb-db-01_zepadmin.password dbAdmin\n```\n\n\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 13:24:49.427",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:11.909",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -115,15 +115,15 @@
       "jobName": "paragraph_1547816435084_1577440349",
       "id": "20190118-130035_567659060",
       "dateCreated": "2019-01-18 13:00:35.084",
-      "dateStarted": "2019-01-18 13:24:44.678",
-      "dateFinished": "2019-01-18 13:24:44.691",
+      "dateStarted": "2019-01-18 14:56:11.938",
+      "dateFinished": "2019-01-18 14:56:11.950",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n\n## Config-File\n\nDie Angaben werden automatisch in `conf/interpreter.json` geschrieben\n\n\n``` json\n        \"sb-db-01_zepadmin.driver\": {\n          \"name\": \"sb-db-01_zepadmin.driver\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_zepadmin.url\": {\n          \"name\": \"sb-db-01_zepadmin.url\",\n          \"value\": \"jdbc:mysql://localhost:3306/\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_zepadmin.user\": {\n          \"name\": \"sb-db-01_zepadmin.user\",\n          \"value\": \"zepadmin\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_zepadmin.password\": {\n          \"name\": \"sb-db-01_zepadmin.password\",\n          \"value\": \"dbAdmin\",\n          \"type\": \"password\"\n        },\n\n        \"sb-db-01_reader.driver\": {\n          \"name\": \"sb-db-01_reader.driver\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_reader.url\": {\n          \"name\": \"sb-db-01_reader.url\",\n          \"value\": \"jdbc:mysql://localhost:3306/\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_reader.user\": {\n          \"name\": \"sb-db-01_reader.user\",\n          \"value\": \"reader\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_reader.password\": {\n          \"name\": \"sb-db-01_reader.password\",\n          \"value\": \"reader\",\n          \"type\": \"password\"\n        },\n\n\n```\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 13:24:49.344",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:12.038",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -185,15 +185,15 @@
       "jobName": "paragraph_1547810861356_1614502811",
       "id": "20190118-112741_203586440",
       "dateCreated": "2019-01-18 11:27:41.356",
-      "dateStarted": "2019-01-18 13:24:44.791",
-      "dateFinished": "2019-01-18 13:24:44.796",
+      "dateStarted": "2019-01-18 14:56:12.073",
+      "dateFinished": "2019-01-18 14:56:12.099",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n\n# MySQL - \"Verbindungskontrolle\"",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 13:24:49.456",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:12.168",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -225,15 +225,15 @@
       "jobName": "paragraph_1547817212892_528658223",
       "id": "20190118-131332_1408497385",
       "dateCreated": "2019-01-18 13:13:32.892",
-      "dateStarted": "2019-01-18 13:24:44.905",
-      "dateFinished": "2019-01-18 13:24:44.911",
+      "dateStarted": "2019-01-18 14:56:12.233",
+      "dateFinished": "2019-01-18 14:56:12.251",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%mysql\nSELECT @@hostname, current_user();\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 13:24:49.469",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:12.327",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -293,15 +293,15 @@
       "jobName": "paragraph_1547817302001_1279719469",
       "id": "20190118-131502_959092684",
       "dateCreated": "2019-01-18 13:15:02.001",
-      "dateStarted": "2019-01-18 13:24:45.020",
-      "dateFinished": "2019-01-18 13:24:45.031",
+      "dateStarted": "2019-01-18 14:56:12.347",
+      "dateFinished": "2019-01-18 14:56:15.281",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%mysql(sb-db-01_zepadmin)\nshow databases;",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 13:24:49.357",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:15.349",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -360,15 +360,15 @@
       "jobName": "paragraph_1547813095894_78979497",
       "id": "20190118-120455_520557514",
       "dateCreated": "2019-01-18 12:04:55.894",
-      "dateStarted": "2019-01-18 13:24:45.142",
-      "dateFinished": "2019-01-18 13:24:45.151",
+      "dateStarted": "2019-01-18 14:56:15.377",
+      "dateFinished": "2019-01-18 14:56:15.444",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%mysql(sb-db-01_reader)\nshow databases;\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 13:24:49.370",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:15.476",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -427,15 +427,15 @@
       "jobName": "paragraph_1547813435115_561859997",
       "id": "20190118-121035_668392296",
       "dateCreated": "2019-01-18 12:10:35.115",
-      "dateStarted": "2019-01-18 13:24:45.255",
-      "dateFinished": "2019-01-18 13:24:45.261",
+      "dateStarted": "2019-01-18 14:56:15.540",
+      "dateFinished": "2019-01-18 14:56:15.635",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%mysql\nuse oracle_scott_myisam;\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 13:24:49.384",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:15.736",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -466,15 +466,15 @@
       "jobName": "paragraph_1547815031417_-1380286362",
       "id": "20190118-123711_118780571",
       "dateCreated": "2019-01-18 12:37:11.417",
-      "dateStarted": "2019-01-18 13:24:45.369",
-      "dateFinished": "2019-01-18 13:24:45.376",
+      "dateStarted": "2019-01-18 14:56:15.776",
+      "dateFinished": "2019-01-18 14:56:15.809",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%mysql\nshow tables;\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 13:24:49.400",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:15.869",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -533,15 +533,15 @@
       "jobName": "paragraph_1547816328767_1544755208",
       "id": "20190118-125848_1405174515",
       "dateCreated": "2019-01-18 12:58:48.767",
-      "dateStarted": "2019-01-18 13:24:45.484",
-      "dateFinished": "2019-01-18 13:24:45.492",
+      "dateStarted": "2019-01-18 14:56:15.913",
+      "dateFinished": "2019-01-18 14:56:15.966",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%mysql\nSELECT * FROM emp LIMIT 10;\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 13:24:49.414",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:16.007",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -607,15 +607,15 @@
       "jobName": "paragraph_1547816347534_2116789013",
       "id": "20190118-125907_360311315",
       "dateCreated": "2019-01-18 12:59:07.534",
-      "dateStarted": "2019-01-18 13:24:45.599",
-      "dateFinished": "2019-01-18 13:24:45.613",
+      "dateStarted": "2019-01-18 14:56:16.113",
+      "dateFinished": "2019-01-18 14:56:16.174",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%mysql\ndescribe emp;\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 13:24:49.485",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:16.212",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -679,15 +679,15 @@
       "jobName": "paragraph_1547817424611_-200641896",
       "id": "20190118-131704_799919383",
       "dateCreated": "2019-01-18 13:17:04.611",
-      "dateStarted": "2019-01-18 13:24:45.712",
-      "dateFinished": "2019-01-18 13:24:45.720",
+      "dateStarted": "2019-01-18 14:56:16.241",
+      "dateFinished": "2019-01-18 14:56:16.261",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%mysql\n",
-      "user": "admin",
-      "dateUpdated": "2019-01-18 13:24:49.499",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-18 14:56:16.338",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
