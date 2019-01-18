@@ -3,7 +3,7 @@
     {
       "text": "%md\n## JDBC Konfiguratin via `%.conf`\n\n* Allenfall mus der JDBC Interpreter vorher via [Interpreters](#/interpreter) neu gestartet werde\n* Es werden nur die vom `default` abweichenden Konfigurationen benötigt \n \nDie JDBC Treiber-Dateien müssen in der JDBC Konfiguration ([Interpreters](#/interpreter)) angegeben werden:\nDependencies / artifact \n```\n/usr/share/java/postgresql.jar\n```\n\n* Es dürfen mehrere Treiber-Dateien abgeben werden (MySQL, PSQL, ...)",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 19:29:48.535",
+      "dateUpdated": "2019-01-18 19:30:44.924",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -15,7 +15,7 @@
           "completionSupport": false
         },
         "editorMode": "ace/mode/markdown",
-        "editorHide": false,
+        "editorHide": true,
         "tableHide": false
       },
       "settings": {
@@ -35,8 +35,8 @@
       "jobName": "paragraph_1547838415632_680612917",
       "id": "20190118-190655_2146775525",
       "dateCreated": "2019-01-18 19:06:55.633",
-      "dateStarted": "2019-01-18 19:29:48.541",
-      "dateFinished": "2019-01-18 19:29:48.549",
+      "dateStarted": "2019-01-18 19:30:44.924",
+      "dateFinished": "2019-01-18 19:30:44.939",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
