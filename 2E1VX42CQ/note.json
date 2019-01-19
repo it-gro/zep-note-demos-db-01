@@ -3,9 +3,9 @@
     {
       "text": "%md\n## Zeppelin Interpreter Shell `%sh`\n\n* https://zeppelin.apache.org/docs/0.8.0/interpreter/shell.html\n* nicht ungefährlich\n\n### Azure (Microsoft)\n* https://docs.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-zeppelin-notebook\n\u003e %sh interpreter will not be supported from HDInsight 4.0 onwards.\n ",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 14:53:46.655",
+      "dateUpdated": "2019-01-19 13:35:38.672",
       "config": {
-        "tableHide": true,
+        "tableHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true,
@@ -35,15 +35,15 @@
       "jobName": "paragraph_1547810596480_-2079195347",
       "id": "20190118-104630_82358079",
       "dateCreated": "2019-01-18 11:23:16.480",
-      "dateStarted": "2019-01-18 14:53:26.584",
-      "dateFinished": "2019-01-18 14:53:26.621",
+      "dateStarted": "2019-01-19 13:35:25.775",
+      "dateFinished": "2019-01-19 13:35:25.781",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%sh\necho Hallo welt\n\ndate\npwd\nwhoami\nid -a\n\nls -ls\nls -l /etc/passwd\ngrep zeppelin /etc/passwd\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 14:53:46.664",
+      "dateUpdated": "2019-01-19 13:35:38.680",
       "config": {
         "editorSetting": {
           "language": "sh",
@@ -55,7 +55,7 @@
         "fontSize": 9.0,
         "results": {},
         "enabled": true,
-        "tableHide": true,
+        "tableHide": false,
         "editorHide": false
       },
       "settings": {
@@ -67,7 +67,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "Hallo welt\nFri Jan 18 14:53:28 UTC 2019\n/home/zeppelin\nzeppelin\nuid\u003d1002(zeppelin) gid\u003d1001(zeppelin) groups\u003d1001(zeppelin)\ntotal 28\n24 -rw-r--r-- 1 zeppelin zeppelin 23317 Jan 18 11:20 note.json\n 1 lrwxrwxrwx 1 zeppelin zeppelin    29 Jan 18 09:38 notebook -\u003e notebook.zep-note-demos-db-01\n 2 drwxr-xr-x 9 zeppelin zeppelin     9 Jan 18 07:37 notebook.20190118_093739\n 1 lrwxrwxrwx 1 zeppelin zeppelin    20 Jan 18 09:37 notebook.zep-note-demos-db-01 -\u003e zep-note-demos-db-01\n 2 drwxrwxr-x 9 zeppelin zeppelin     9 Jan 18 14:34 zep-note-demos-db-01\n-rw-r--r-- 1 root root 1901 Jan 18 07:36 /etc/passwd\nzeppelin:x:1002:1001::/home/zeppelin:/bin/bash\n"
+            "data": "Hallo welt\nSat Jan 19 13:35:25 UTC 2019\n/home/zeppelin\nzeppelin\nuid\u003d1002(zeppelin) gid\u003d1001(zeppelin) groups\u003d1001(zeppelin)\ntotal 8\n1 lrwxrwxrwx  1 zeppelin zeppelin 29 Jan 19 12:00 notebook -\u003e notebook.zep-note-demos-db-01\n1 lrwxrwxrwx  1 zeppelin zeppelin 18 Jan 19 12:00 notebook.hortonworks-gallery -\u003e zeppelin-notebooks\n1 lrwxrwxrwx  1 zeppelin zeppelin 20 Jan 19 11:59 notebook.zep-note-demos-db-01 -\u003e zep-note-demos-db-01\n1 lrwxrwxrwx  1 zeppelin zeppelin 20 Jan 19 11:59 notebook.zep-note-demos-hp-01 -\u003e zep-note-demos-hp-01\n1 lrwxrwxrwx  1 zeppelin zeppelin 19 Jan 19 11:59 notebook.zeppelin.apache.org -\u003e zeppelin.apache.org\n2 drwxrwxr-x 11 zeppelin zeppelin 11 Jan 19 11:59 zep-note-demos-db-01\n2 drwxrwxr-x 21 zeppelin zeppelin 21 Jan 19 11:59 zep-note-demos-hp-01\n3 drwxrwxr-x 30 zeppelin zeppelin 32 Jan 19 12:00 zeppelin-notebooks\n-rw-r--r-- 1 root root 1901 Jan 19 11:59 /etc/passwd\nzeppelin:x:1002:1001::/home/zeppelin:/bin/bash\n"
           }
         ]
       },
@@ -75,15 +75,15 @@
       "jobName": "paragraph_1547810596480_-1031562836",
       "id": "20190118-104829_1141963590",
       "dateCreated": "2019-01-18 11:23:16.481",
-      "dateStarted": "2019-01-18 14:53:26.709",
-      "dateFinished": "2019-01-18 14:53:29.007",
+      "dateStarted": "2019-01-19 13:35:25.884",
+      "dateFinished": "2019-01-19 13:35:25.967",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%sh\necho -e \"%html $(curl https://ipv6excuses.com)\"\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 14:53:55.369",
+      "dateUpdated": "2019-01-19 13:36:04.368",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -95,7 +95,7 @@
           "completionSupport": false
         },
         "editorMode": "ace/mode/sh",
-        "tableHide": true,
+        "tableHide": false,
         "editorHide": false
       },
       "settings": {
@@ -107,11 +107,11 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r100   695    0   695    0     0    228      0 --:--:--  0:00:03 --:--:--   228\r100   695    0   695    0     0    227      0 --:--:--  0:00:03 --:--:--   227\n"
+            "data": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r100   786    0   786    0     0    467      0 --:--:--  0:00:01 --:--:--   467\n"
           },
           {
             "type": "HTML",
-            "data": "\n\u003chtml\u003e\n\u003chead\u003e\n\u003clink rel\u003d\"stylesheet\" type\u003d\"text/css\" href\u003d\"style.css\"\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\n\u003ch1\u003eWe\u0027ve still got plenty of IPv4\n\u003c/h1\u003e\n\u003cbr /\u003e\n\u003cbr /\u003e\nSuggest a new excuse:\n\u003ca href\u003d\"https://twitter.com/intent/tweet?screen_name\u003dipv6excuses\" class\u003d\"twitter-mention-button\" data-related\u003d\"ipv6excuses\"\u003eTweet to @ipv6excuses\u003c/a\u003e\n\u003cscript\u003e!function(d,s,id){var js,fjs\u003dd.getElementsByTagName(s)[0],p\u003d/^http:/.test(d.location)?\u0027http\u0027:\u0027https\u0027;if(!d.getElementById(id)){js\u003dd.createElement(s);js.id\u003did;js.src\u003dp+\u0027://platform.twitter.com/widgets.js\u0027;fjs.parentNode.insertBefore(js,fjs);}}(document, \u0027script\u0027, \u0027twitter-wjs\u0027);\u003c/script\u003e\n\u003cbr /\u003eOr play \u003ca href\u003d\"http://ipv6bingo.com\"\u003eIPv6 Excuse Bingo\u003c/a\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n"
+            "data": "\n\u003chtml\u003e\n\u003chead\u003e\n\u003clink rel\u003d\"stylesheet\" type\u003d\"text/css\" href\u003d\"style.css\"\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\n\u003ch1\u003eCan\u0027t we just \u003ca href\u003d\u0027http://ipv4marketgroup.com/ipv4-pricing-in-a-post-arin-runout-world/\u0027\u003ebuy\u003c/a\u003e more IPv4 addresses?\n\u003c/h1\u003e\n\u003cbr /\u003e\n\u003cbr /\u003e\nSuggest a new excuse:\n\u003ca href\u003d\"https://twitter.com/intent/tweet?screen_name\u003dipv6excuses\" class\u003d\"twitter-mention-button\" data-related\u003d\"ipv6excuses\"\u003eTweet to @ipv6excuses\u003c/a\u003e\n\u003cscript\u003e!function(d,s,id){var js,fjs\u003dd.getElementsByTagName(s)[0],p\u003d/^http:/.test(d.location)?\u0027http\u0027:\u0027https\u0027;if(!d.getElementById(id)){js\u003dd.createElement(s);js.id\u003did;js.src\u003dp+\u0027://platform.twitter.com/widgets.js\u0027;fjs.parentNode.insertBefore(js,fjs);}}(document, \u0027script\u0027, \u0027twitter-wjs\u0027);\u003c/script\u003e\n\u003cbr /\u003eOr play \u003ca href\u003d\"http://ipv6bingo.com\"\u003eIPv6 Excuse Bingo\u003c/a\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n"
           }
         ]
       },
@@ -119,9 +119,77 @@
       "jobName": "paragraph_1547810596481_-16110175",
       "id": "20190118-104859_960293953",
       "dateCreated": "2019-01-18 11:23:16.481",
-      "dateStarted": "2019-01-18 14:53:29.033",
-      "dateFinished": "2019-01-18 14:53:32.117",
+      "dateStarted": "2019-01-19 13:36:04.374",
+      "dateFinished": "2019-01-19 13:36:06.074",
       "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sh\ngrep value /opt/zeppelin/conf/interpreter.json\n",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-19 13:35:38.692",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh",
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "          \"value\": \"python\",\n          \"value\": \"30000\",\n          \"value\": \"1000\",\n          \"value\": true,\n          \"value\": \"33554432\",\n          \"value\": \"http://localhost:50070/webhdfs/v1/\",\n          \"value\": \"hdfs\",\n          \"value\": \"1000\",\n          \"value\": \"\",\n          \"value\": false,\n          \"value\": false,\n          \"value\": true,\n          \"value\": \"R\",\n          \"value\": \"Zeppelin\",\n          \"value\": \"100%\",\n          \"value\": true,\n          \"value\": \"spark-packages,http://dl.bintray.com/spark-packages/maven,false;\",\n          \"value\": \"1000\",\n          \"value\": \"local[*]\",\n          \"value\": \"python\",\n          \"value\": \"\",\n          \"value\": true,\n          \"value\": true,\n          \"value\": \"local-repo\",\n          \"value\": true,\n          \"value\": false,\n          \"value\": true,\n          \"value\": \"\",\n          \"value\": \"out.format \\u003d \\u0027html\\u0027, comment \\u003d NA, echo \\u003d FALSE, results \\u003d \\u0027asis\\u0027, message \\u003d F, warning \\u003d F, fig.retina \\u003d 2\",\n          \"value\": true,\n          \"value\": \"\",\n          \"value\": false,\n          \"value\": \"\",\n          \"value\": false,\n          \"value\": \"\",\n          \"value\": \"\",\n          \"value\": \"60000\",\n          \"value\": \"pegdown\",\n          \"value\": \"jdbc:mysql://sb-db-01.lxd:3306/\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"value\": \"\",\n          \"value\": \"120\",\n          \"value\": \"\",\n          \"value\": \"\",\n          \"value\": false,\n          \"value\": \"reader\",\n          \"value\": \"10\",\n          \"value\": \"1000\",\n          \"value\": \"\",\n          \"value\": \"\",\n          \"value\": \"\",\n          \"value\": true,\n          \"value\": \"\",\n          \"value\": false,\n          \"value\": \"org.postgresql.Driver\",\n          \"value\": \"jdbc:postgresql://localhost:5432/myadmin\",\n          \"value\": \"myadmin\",\n          \"value\": \"dbAdmin\",\n          \"value\": \"org.postgresql.Driver\",\n          \"value\": \"jdbc:postgresql://localhost:5432/postgres\",\n          \"value\": \"myadmin\",\n          \"value\": \"dbAdmin\",\n          \"value\": \"org.postgresql.Driver\",\n          \"value\": \"jdbc:postgresql://localhost:5432/myadmin\",\n          \"value\": \"myadmin\",\n          \"value\": \"dbAdmin\",\n          \"value\": \"org.postgresql.Driver\",\n          \"value\": \"jdbc:postgresql://localhost:5432/dvdrental\",\n          \"value\": \"myadmin\",\n          \"value\": \"dbAdmin\",\n          \"value\": \"org.postgresql.Driver\",\n          \"value\": \"jdbc:postgresql://localhost:5432/dellstore2\",\n          \"value\": \"myadmin\",\n          \"value\": \"dbAdmin\",\n          \"value\": \"org.postgresql.Driver\",\n          \"value\": \"jdbc:postgresql://localhost:5432/pagila\",\n          \"value\": \"myadmin\",\n          \"value\": \"dbAdmin\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"value\": \"jdbc:mysql://localhost:3306/\",\n          \"value\": \"reader\",\n          \"value\": \"reader\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"value\": \"jdbc:mysql://localhost:3306/information_schema\",\n          \"value\": \"reader\",\n          \"value\": \"reader\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"value\": \"jdbc:mysql://localhost:3306/colors\",\n          \"value\": \"reader\",\n          \"value\": \"reader\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"value\": \"jdbc:mysql://localhost:3306/dslabs_ext\",\n          \"value\": \"reader\",\n          \"value\": \"reader\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"value\": \"jdbc:mysql://localhost:3306/foodmart\",\n          \"value\": \"reader\",\n          \"value\": \"reader\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"value\": \"jdbc:mysql://localhost:3306/kddcup99\",\n          \"value\": \"reader\",\n          \"value\": \"reader\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"value\": \"jdbc:mysql://localhost:3306/menagerie\",\n          \"value\": \"reader\",\n          \"value\": \"reader\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"value\": \"jdbc:mysql://localhost:3306/movielens_100k\",\n          \"value\": \"reader\",\n          \"value\": \"reader\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"value\": \"jdbc:mysql://localhost:3306/movielens_latest_small\",\n          \"value\": \"reader\",\n          \"value\": \"reader\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"value\": \"jdbc:mysql://localhost:3306/openaq_org\",\n          \"value\": \"reader\",\n          \"value\": \"reader\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"value\": \"jdbc:mysql://localhost:3306/oracle_hr_innodb\",\n          \"value\": \"reader\",\n          \"value\": \"reader\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"value\": \"jdbc:mysql://localhost:3306/oracle_hr_myisam\",\n          \"value\": \"reader\",\n          \"value\": \"reader\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"value\": \"jdbc:mysql://localhost:3306/oracle_scott_csv\",\n          \"value\": \"reader\",\n          \"value\": \"reader\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"value\": \"jdbc:mysql://localhost:3306/oracle_scott_innodb\",\n          \"value\": \"reader\",\n          \"value\": \"reader\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"value\": \"jdbc:mysql://localhost:3306/oracle_scott_myisam\",\n          \"value\": \"reader\",\n          \"value\": \"reader\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"value\": \"jdbc:mysql://localhost:3306/phpmyadmin\",\n          \"value\": \"reader\",\n          \"value\": \"reader\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"value\": \"jdbc:mysql://localhost:3306/sakila\",\n          \"value\": \"reader\",\n          \"value\": \"reader\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"value\": \"jdbc:mysql://localhost:3306/uci_ml_bank\",\n          \"value\": \"reader\",\n          \"value\": \"reader\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"value\": \"jdbc:mysql://localhost:3306/world\",\n          \"value\": \"reader\",\n          \"value\": \"reader\",\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547904819236_437177851",
+      "id": "20190119-133339_455765870",
+      "dateCreated": "2019-01-19 13:33:39.237",
+      "dateStarted": "2019-01-19 13:35:27.705",
+      "dateFinished": "2019-01-19 13:35:27.731",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sh\n",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-19 13:35:38.697",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/markdown",
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1547904859427_-2086155353",
+      "id": "20190119-133419_1804816625",
+      "dateCreated": "2019-01-19 13:34:19.427",
+      "status": "FINISHED",
+      "errorMessage": "",
       "progressUpdateIntervalMs": 500
     }
   ],
