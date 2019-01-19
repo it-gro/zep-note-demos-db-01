@@ -3,7 +3,7 @@
     {
       "text": "%md\n## Willkommen bei Zeppelin\n### Das ist ein live Notebook, zum Ausführen Shift-Enter drücken)\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 14:53:01.264",
+      "dateUpdated": "2019-01-19 13:32:52.158",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -16,7 +16,7 @@
         },
         "editorMode": "ace/mode/markdown",
         "editorHide": false,
-        "tableHide": true
+        "tableHide": false
       },
       "settings": {
         "params": {},
@@ -35,15 +35,15 @@
       "jobName": "paragraph_1547806407850_-1389035914",
       "id": "20190118-101327_372980234",
       "dateCreated": "2019-01-18 10:13:27.850",
-      "dateStarted": "2019-01-18 14:52:52.828",
-      "dateFinished": "2019-01-18 14:52:52.844",
+      "dateStarted": "2019-01-19 13:32:52.167",
+      "dateFinished": "2019-01-19 13:32:52.170",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n### Zeppelin Links:\n\n* https://zeppelin.apache.org/docs/0.8.0/\n* https://zeppelin.apache.org/docs/0.8.0/interpreter/jdbc.html\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 14:53:01.283",
+      "dateUpdated": "2019-01-19 13:32:52.267",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -56,7 +56,7 @@
         },
         "editorMode": "ace/mode/markdown",
         "editorHide": false,
-        "tableHide": true
+        "tableHide": false
       },
       "settings": {
         "params": {},
@@ -75,15 +75,15 @@
       "jobName": "paragraph_1547806425160_1053700429",
       "id": "20190118-101345_774529936",
       "dateCreated": "2019-01-18 10:13:45.160",
-      "dateStarted": "2019-01-18 14:52:35.053",
-      "dateFinished": "2019-01-18 14:52:35.114",
+      "dateStarted": "2019-01-19 13:32:52.283",
+      "dateFinished": "2019-01-19 13:32:52.293",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n### Zeppelin Markdown\n\nInterpreter: `%md`\n\n* Markdown: https://daringfireball.net/projects/markdown/syntax\n* https://zeppelin.apache.org/docs/0.8.0/interpreter/markdown.html\n* Erweiterungen zur Basis-Systax: https://code.google.com/archive/p/markdown4j/\n ",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 14:53:01.302",
+      "dateUpdated": "2019-01-19 13:32:52.380",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -96,7 +96,7 @@
         },
         "editorMode": "ace/mode/markdown",
         "editorHide": false,
-        "tableHide": true
+        "tableHide": false
       },
       "settings": {
         "params": {},
@@ -115,15 +115,15 @@
       "jobName": "paragraph_1547807105307_1871763417",
       "id": "20190118-102505_259672657",
       "dateCreated": "2019-01-18 10:25:05.307",
-      "dateStarted": "2019-01-18 14:52:35.285",
-      "dateFinished": "2019-01-18 14:52:35.343",
+      "dateStarted": "2019-01-19 13:32:52.393",
+      "dateFinished": "2019-01-19 13:32:52.397",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n## markdownguide.org\n\n* [cheat-sheet](https://markdownguide.org/cheat-sheet)\n* [basic-syntax](https://markdownguide.org/basic-syntax)\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 14:53:01.317",
+      "dateUpdated": "2019-01-19 13:32:52.492",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -136,7 +136,7 @@
         },
         "editorMode": "ace/mode/markdown",
         "editorHide": false,
-        "tableHide": true
+        "tableHide": false
       },
       "settings": {
         "params": {},
@@ -155,15 +155,15 @@
       "jobName": "paragraph_1547805164314_1246574850",
       "id": "20190118-095244_692866776",
       "dateCreated": "2019-01-18 09:52:44.314",
-      "dateStarted": "2019-01-18 14:52:35.452",
-      "dateFinished": "2019-01-18 14:52:35.483",
+      "dateStarted": "2019-01-19 13:32:52.501",
+      "dateFinished": "2019-01-19 13:32:52.507",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "| Element         | Markdown Syntax\n|-----------------|----------------\n| Heading         | # H1\n|                 | ## H2\n|                 | ### H3\n| Bold            | **bold text**\n| Italic          | *italicized text*\n| Blockquote      | \u003e blockquote\n| Code            | `code`\n| Link            | [zeppelin](https://zeppelin.apache.org/)\n| Image           | ![alt text](https://zeppelin.apache.org/assets/themes/zeppelin/img/favicon/apple-touch-icon.png)\n| Image as Link   | [![alt text](https://zeppelin.apache.org/assets/themes/zeppelin/img/favicon/favicon-32x32.png)](https://zeppelin.apache.org/)\n\n\n---\nHorizontal Rule \n---\n\nOrdered List\n\n1. First item\n4. Second item\n9. Third item\n\n\nUnordered List\n\n* First item\n* Second item\n* Third item\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 14:53:01.337",
+      "dateUpdated": "2019-01-19 13:32:52.600",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -176,7 +176,7 @@
         },
         "editorMode": "ace/mode/markdown",
         "editorHide": false,
-        "tableHide": true
+        "tableHide": false
       },
       "settings": {
         "params": {},
@@ -195,15 +195,15 @@
       "jobName": "paragraph_1547805170849_-1618490054",
       "id": "20190118-095250_648336510",
       "dateCreated": "2019-01-18 09:52:50.849",
-      "dateStarted": "2019-01-18 14:52:35.621",
-      "dateFinished": "2019-01-18 14:52:35.647",
+      "dateStarted": "2019-01-19 13:32:52.614",
+      "dateFinished": "2019-01-19 13:32:52.618",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n### Ein grösseres Markdown Beispiel\n* [markdown-it](https://markdown-it.github.io/)",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 14:53:01.352",
+      "dateUpdated": "2019-01-19 13:32:52.713",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -216,7 +216,7 @@
         },
         "editorMode": "ace/mode/markdown",
         "editorHide": false,
-        "tableHide": true
+        "tableHide": false
       },
       "settings": {
         "params": {},
@@ -235,15 +235,15 @@
       "jobName": "paragraph_1547806916241_-999565361",
       "id": "20190118-102156_24093963",
       "dateCreated": "2019-01-18 10:21:56.241",
-      "dateStarted": "2019-01-18 14:52:35.750",
-      "dateFinished": "2019-01-18 14:52:35.757",
+      "dateStarted": "2019-01-19 13:32:52.722",
+      "dateFinished": "2019-01-19 13:32:52.725",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%md\n\n# h1 Heading 8-)\n## h2 Heading\n### h3 Heading\n#### h4 Heading\n##### h5 Heading\n###### h6 Heading\n\n\n## Horizontal Rules\n\n___\n\n---\n\n***\n\n\n## Typographic replacements\n\nEnable typographer option to see result.\n\n(c) (C) (r) (R) (tm) (TM) (p) (P) +-\n\ntest.. test... test..... test?..... test!....\n\n!!!!!! ???? ,,  -- ---\n\n\"Smartypants, double quotes\" and \u0027single quotes\u0027\n\n\n## Emphasis\n\n**This is bold text**\n\n__This is bold text__\n\n*This is italic text*\n\n_This is italic text_\n\n~~Strikethrough~~\n\n\n## Blockquotes\n\n\n\u003e Blockquotes can also be nested...\n\u003e\u003e ...by using additional greater-than signs right next to each other...\n\u003e \u003e \u003e ...or with spaces between arrows.\n\n\n## Lists\n\nUnordered\n\n+ Create a list by starting a line with `+`, `-`, or `*`\n+ Sub-lists are made by indenting 2 spaces:\n  - Marker character change forces new list start:\n    * Ac tristique libero volutpat at\n    + Facilisis in pretium nisl aliquet\n    - Nulla volutpat aliquam velit\n+ Very easy!\n\nOrdered\n\n1. Lorem ipsum dolor sit amet\n2. Consectetur adipiscing elit\n3. Integer molestie lorem at massa\n\n\n1. You can use sequential numbers...\n1. ...or keep all the numbers as `1.`\n\nStart numbering with offset:\n\n57. foo\n1. bar\n\n\n## Code\n\nInline `code`\n\nIndented code\n\n    // Some comments\n    line 1 of code\n    line 2 of code\n    line 3 of code\n\n\nBlock code \"fences\"\n\n```\nSample text here...\n```\n\nSyntax highlighting\n\n``` js\nvar foo \u003d function (bar) {\n  return bar++;\n};\n\nconsole.log(foo(5));\n```\n\n## Tables\n\n| Option | Description |\n| ------ | ----------- |\n| data   | path to data files to supply the data that will be passed into templates. |\n| engine | engine to be used for processing templates. Handlebars is the default. |\n| ext    | extension to be used for dest files. |\n\nRight aligned columns\n\n| Option | Description |\n| ------:| -----------:|\n| data   | path to data files to supply the data that will be passed into templates. |\n| engine | engine to be used for processing templates. Handlebars is the default. |\n| ext    | extension to be used for dest files. |\n\n\n## Links\n\n[link text](http://dev.nodeca.com)\n\n[link with title](http://nodeca.github.io/pica/demo/ \"title text!\")\n\nAutoconverted link https://github.com/nodeca/pica \n\n\n## Images\n\n![Minion](https://octodex.github.com/images/minion.png \"Minions\")\n",
+      "text": "%md\n\n# h1 Heading 8-)\n## h2 Heading\n### h3 Heading\n#### h4 Heading\n##### h5 Heading\n###### h6 Heading\n\n\n## Horizontal Rules\n\n___\n\n---\n\n***\n\n\n\n## Emphasis\n\n**This is bold text**\n\n__This is bold text__\n\n*This is italic text*\n\n_This is italic text_\n\n~~Strikethrough~~\n\n\n## Blockquotes\n\n\n\u003e Blockquotes can also be nested...\n\u003e\u003e ...by using additional greater-than signs right next to each other...\n\u003e \u003e \u003e ...or with spaces between arrows.\n\n\n## Lists\n\nUnordered\n\n+ Create a list by starting a line with `+`, `-`, or `*`\n+ Sub-lists are made by indenting 2 spaces:\n  - Marker character change forces new list start:\n    * Ac tristique libero volutpat at\n    + Facilisis in pretium nisl aliquet\n    - Nulla volutpat aliquam velit\n+ Very easy!\n\nOrdered\n\n1. Lorem ipsum dolor sit amet\n2. Consectetur adipiscing elit\n3. Integer molestie lorem at massa\n\n\n1. You can use sequential numbers...\n1. ...or keep all the numbers as `1.`\n\nStart numbering with offset:\n\n57. foo\n1. bar\n\n\n## Code\n\nInline `code`\n\nIndented code\n\n    // Some comments\n    line 1 of code\n    line 2 of code\n    line 3 of code\n\n\nBlock code \"fences\"\n\n```\nSample text here...\n```\n\nSyntax highlighting\n\n``` js\nvar foo \u003d function (bar) {\n  return bar++;\n};\n\nconsole.log(foo(5));\n```\n\n## Tables\n\n| Option | Description |\n| ------ | ----------- |\n| data   | path to data files to supply the data that will be passed into templates. |\n| engine | engine to be used for processing templates. Handlebars is the default. |\n| ext    | extension to be used for dest files. |\n\nRight aligned columns\n\n| Option | Description |\n| ------:| -----------:|\n| data   | path to data files to supply the data that will be passed into templates. |\n| engine | engine to be used for processing templates. Handlebars is the default. |\n| ext    | extension to be used for dest files. |\n\n\n## Links\n\n[link text](http://dev.nodeca.com)\n\n[link with title](http://nodeca.github.io/pica/demo/ \"title text!\")\n\nAutoconverted link https://github.com/nodeca/pica \n\n\n## Images\n\n![Minion](https://octodex.github.com/images/minion.png \"Minions\")\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 14:53:01.371",
+      "dateUpdated": "2019-01-19 13:32:52.821",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -255,7 +255,7 @@
           "completionSupport": false
         },
         "editorMode": "ace/mode/markdown",
-        "tableHide": true,
+        "tableHide": false,
         "editorHide": false
       },
       "settings": {
@@ -267,7 +267,7 @@
         "msg": [
           {
             "type": "HTML",
-            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eh1 Heading 8-)\u003c/h1\u003e\n\u003ch2\u003eh2 Heading\u003c/h2\u003e\n\u003ch3\u003eh3 Heading\u003c/h3\u003e\n\u003ch4\u003eh4 Heading\u003c/h4\u003e\n\u003ch5\u003eh5 Heading\u003c/h5\u003e\n\u003ch6\u003eh6 Heading\u003c/h6\u003e\n\u003ch2\u003eHorizontal Rules\u003c/h2\u003e\n\u003chr/\u003e\n\u003chr/\u003e\n\u003chr/\u003e\n\u003ch2\u003eTypographic replacements\u003c/h2\u003e\n\u003cp\u003eEnable typographer option to see result.\u003c/p\u003e\n\u003cp\u003e(c) (C) (r) (R) (tm) (TM) (p) (P) +-\u003c/p\u003e\n\u003cp\u003etest.. test\u0026hellip; test\u0026hellip;.. test?\u0026hellip;.. test!\u0026hellip;.\u003c/p\u003e\n\u003cp\u003e!!!!!! ???? ,, \u0026ndash; \u0026mdash;\u003c/p\u003e\n\u003cp\u003e\u0026ldquo;Smartypants, double quotes\u0026rdquo; and \u0026lsquo;single quotes\u0026rsquo;\u003c/p\u003e\n\u003ch2\u003eEmphasis\u003c/h2\u003e\n\u003cp\u003e\u003cstrong\u003eThis is bold text\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eThis is bold text\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eThis is italic text\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eThis is italic text\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003e\u003cdel\u003eStrikethrough\u003c/del\u003e\u003c/p\u003e\n\u003ch2\u003eBlockquotes\u003c/h2\u003e\n\u003cblockquote\u003e\n  \u003cp\u003eBlockquotes can also be nested\u0026hellip;\u003c/p\u003e\n  \u003cblockquote\u003e\n    \u003cp\u003e\u0026hellip;by using additional greater-than signs right next to each other\u0026hellip;\u003c/p\u003e\n    \u003cblockquote\u003e\n      \u003cp\u003e\u0026hellip;or with spaces between arrows.\u003c/p\u003e\n    \u003c/blockquote\u003e\n  \u003c/blockquote\u003e\n\u003c/blockquote\u003e\n\u003ch2\u003eLists\u003c/h2\u003e\n\u003cp\u003eUnordered\u003c/p\u003e\n\u003cul\u003e\n  \u003cli\u003eCreate a list by starting a line with \u003ccode\u003e+\u003c/code\u003e, \u003ccode\u003e-\u003c/code\u003e, or \u003ccode\u003e*\u003c/code\u003e\u003c/li\u003e\n  \u003cli\u003eSub-lists are made by indenting 2 spaces:\u003c/li\u003e\n  \u003cli\u003eMarker character change forces new list start:\n    \u003cul\u003e\n      \u003cli\u003eAc tristique libero volutpat at\u003c/li\u003e\n      \u003cli\u003eFacilisis in pretium nisl aliquet\u003c/li\u003e\n      \u003cli\u003eNulla volutpat aliquam velit\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n  \u003cli\u003eVery easy!\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eOrdered\u003c/p\u003e\n\u003col\u003e\n  \u003cli\u003eLorem ipsum dolor sit amet\u003c/li\u003e\n  \u003cli\u003eConsectetur adipiscing elit\u003c/li\u003e\n  \u003cli\u003eInteger molestie lorem at massa\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eYou can use sequential numbers\u0026hellip;\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\u0026hellip;or keep all the numbers as \u003ccode\u003e1.\u003c/code\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eStart numbering with offset:\u003c/p\u003e\n\u003col\u003e\n  \u003cli\u003efoo\u003c/li\u003e\n  \u003cli\u003ebar\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch2\u003eCode\u003c/h2\u003e\n\u003cp\u003eInline \u003ccode\u003ecode\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eIndented code\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e// Some comments\nline 1 of code\nline 2 of code\nline 3 of code\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eBlock code \u0026ldquo;fences\u0026rdquo;\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSample text here...\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eSyntax highlighting\u003c/p\u003e\n\u003cpre\u003e\u003ccode class\u003d\"js\"\u003evar foo \u003d function (bar) {\n  return bar++;\n};\n\nconsole.log(foo(5));\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2\u003eTables\u003c/h2\u003e\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003eOption \u003c/th\u003e\n      \u003cth\u003eDescription \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003edata \u003c/td\u003e\n      \u003ctd\u003epath to data files to supply the data that will be passed into templates. \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eengine \u003c/td\u003e\n      \u003ctd\u003eengine to be used for processing templates. Handlebars is the default. \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eext \u003c/td\u003e\n      \u003ctd\u003eextension to be used for dest files. \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\u003cp\u003eRight aligned columns\u003c/p\u003e\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth align\u003d\"right\"\u003eOption \u003c/th\u003e\n      \u003cth align\u003d\"right\"\u003eDescription \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd align\u003d\"right\"\u003edata \u003c/td\u003e\n      \u003ctd align\u003d\"right\"\u003epath to data files to supply the data that will be passed into templates. \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd align\u003d\"right\"\u003eengine \u003c/td\u003e\n      \u003ctd align\u003d\"right\"\u003eengine to be used for processing templates. Handlebars is the default. \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd align\u003d\"right\"\u003eext \u003c/td\u003e\n      \u003ctd align\u003d\"right\"\u003eextension to be used for dest files. \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\u003ch2\u003eLinks\u003c/h2\u003e\n\u003cp\u003e\u003ca href\u003d\"http://dev.nodeca.com\"\u003elink text\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href\u003d\"http://nodeca.github.io/pica/demo/\" title\u003d\"title text!\"\u003elink with title\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eAutoconverted link \u003ca href\u003d\"https://github.com/nodeca/pica\"\u003ehttps://github.com/nodeca/pica\u003c/a\u003e \u003c/p\u003e\n\u003ch2\u003eImages\u003c/h2\u003e\n\u003cp\u003e\u003cimg src\u003d\"https://octodex.github.com/images/minion.png\" alt\u003d\"Minion\" title\u003d\"Minions\" /\u003e\u003c/p\u003e\n\u003c/div\u003e"
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eh1 Heading 8-)\u003c/h1\u003e\n\u003ch2\u003eh2 Heading\u003c/h2\u003e\n\u003ch3\u003eh3 Heading\u003c/h3\u003e\n\u003ch4\u003eh4 Heading\u003c/h4\u003e\n\u003ch5\u003eh5 Heading\u003c/h5\u003e\n\u003ch6\u003eh6 Heading\u003c/h6\u003e\n\u003ch2\u003eHorizontal Rules\u003c/h2\u003e\n\u003chr/\u003e\n\u003chr/\u003e\n\u003chr/\u003e\n\u003ch2\u003eEmphasis\u003c/h2\u003e\n\u003cp\u003e\u003cstrong\u003eThis is bold text\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eThis is bold text\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eThis is italic text\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003e\u003cem\u003eThis is italic text\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003e\u003cdel\u003eStrikethrough\u003c/del\u003e\u003c/p\u003e\n\u003ch2\u003eBlockquotes\u003c/h2\u003e\n\u003cblockquote\u003e\n  \u003cp\u003eBlockquotes can also be nested\u0026hellip;\u003c/p\u003e\n  \u003cblockquote\u003e\n    \u003cp\u003e\u0026hellip;by using additional greater-than signs right next to each other\u0026hellip;\u003c/p\u003e\n    \u003cblockquote\u003e\n      \u003cp\u003e\u0026hellip;or with spaces between arrows.\u003c/p\u003e\n    \u003c/blockquote\u003e\n  \u003c/blockquote\u003e\n\u003c/blockquote\u003e\n\u003ch2\u003eLists\u003c/h2\u003e\n\u003cp\u003eUnordered\u003c/p\u003e\n\u003cul\u003e\n  \u003cli\u003eCreate a list by starting a line with \u003ccode\u003e+\u003c/code\u003e, \u003ccode\u003e-\u003c/code\u003e, or \u003ccode\u003e*\u003c/code\u003e\u003c/li\u003e\n  \u003cli\u003eSub-lists are made by indenting 2 spaces:\u003c/li\u003e\n  \u003cli\u003eMarker character change forces new list start:\n    \u003cul\u003e\n      \u003cli\u003eAc tristique libero volutpat at\u003c/li\u003e\n      \u003cli\u003eFacilisis in pretium nisl aliquet\u003c/li\u003e\n      \u003cli\u003eNulla volutpat aliquam velit\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n  \u003cli\u003eVery easy!\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eOrdered\u003c/p\u003e\n\u003col\u003e\n  \u003cli\u003eLorem ipsum dolor sit amet\u003c/li\u003e\n  \u003cli\u003eConsectetur adipiscing elit\u003c/li\u003e\n  \u003cli\u003eInteger molestie lorem at massa\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eYou can use sequential numbers\u0026hellip;\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\u0026hellip;or keep all the numbers as \u003ccode\u003e1.\u003c/code\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eStart numbering with offset:\u003c/p\u003e\n\u003col\u003e\n  \u003cli\u003efoo\u003c/li\u003e\n  \u003cli\u003ebar\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch2\u003eCode\u003c/h2\u003e\n\u003cp\u003eInline \u003ccode\u003ecode\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eIndented code\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e// Some comments\nline 1 of code\nline 2 of code\nline 3 of code\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eBlock code \u0026ldquo;fences\u0026rdquo;\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSample text here...\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eSyntax highlighting\u003c/p\u003e\n\u003cpre\u003e\u003ccode class\u003d\"js\"\u003evar foo \u003d function (bar) {\n  return bar++;\n};\n\nconsole.log(foo(5));\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2\u003eTables\u003c/h2\u003e\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003eOption \u003c/th\u003e\n      \u003cth\u003eDescription \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003edata \u003c/td\u003e\n      \u003ctd\u003epath to data files to supply the data that will be passed into templates. \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eengine \u003c/td\u003e\n      \u003ctd\u003eengine to be used for processing templates. Handlebars is the default. \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eext \u003c/td\u003e\n      \u003ctd\u003eextension to be used for dest files. \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\u003cp\u003eRight aligned columns\u003c/p\u003e\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth align\u003d\"right\"\u003eOption \u003c/th\u003e\n      \u003cth align\u003d\"right\"\u003eDescription \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd align\u003d\"right\"\u003edata \u003c/td\u003e\n      \u003ctd align\u003d\"right\"\u003epath to data files to supply the data that will be passed into templates. \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd align\u003d\"right\"\u003eengine \u003c/td\u003e\n      \u003ctd align\u003d\"right\"\u003eengine to be used for processing templates. Handlebars is the default. \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd align\u003d\"right\"\u003eext \u003c/td\u003e\n      \u003ctd align\u003d\"right\"\u003eextension to be used for dest files. \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\u003ch2\u003eLinks\u003c/h2\u003e\n\u003cp\u003e\u003ca href\u003d\"http://dev.nodeca.com\"\u003elink text\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href\u003d\"http://nodeca.github.io/pica/demo/\" title\u003d\"title text!\"\u003elink with title\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eAutoconverted link \u003ca href\u003d\"https://github.com/nodeca/pica\"\u003ehttps://github.com/nodeca/pica\u003c/a\u003e \u003c/p\u003e\n\u003ch2\u003eImages\u003c/h2\u003e\n\u003cp\u003e\u003cimg src\u003d\"https://octodex.github.com/images/minion.png\" alt\u003d\"Minion\" title\u003d\"Minions\" /\u003e\u003c/p\u003e\n\u003c/div\u003e"
           }
         ]
       },
@@ -275,14 +275,14 @@
       "jobName": "paragraph_1547804637484_-1488163705",
       "id": "20190118-094357_146974434",
       "dateCreated": "2019-01-18 09:43:57.484",
-      "dateStarted": "2019-01-18 14:52:35.902",
-      "dateFinished": "2019-01-18 14:52:35.958",
+      "dateStarted": "2019-01-19 13:32:52.835",
+      "dateFinished": "2019-01-19 13:32:52.856",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 14:53:01.387",
+      "dateUpdated": "2019-01-19 13:32:52.934",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -294,7 +294,7 @@
           "completionSupport": false
         },
         "editorMode": "ace/mode/markdown",
-        "tableHide": true,
+        "tableHide": false,
         "editorHide": false
       },
       "settings": {
