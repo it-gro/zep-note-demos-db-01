@@ -3,7 +3,7 @@
     {
       "text": "%md\n## MySQL \n* https://zeppelin.apache.org/docs/0.8.0/interpreter/jdbc.html\n* https://zeppelin.apache.org/docs/0.6.2/interpreter/jdbc.html#multiple-connections\n* https://dev.mysql.com/doc/refman/8.0/en/\n* https://dev.mysql.com/doc/refman/8.0/en/tutorial.html\n\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 19:05:24.713",
+      "dateUpdated": "2019-01-19 13:07:17.209",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -15,7 +15,7 @@
           "completionSupport": false
         },
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "tableHide": false
       },
       "settings": {
@@ -35,15 +35,15 @@
       "jobName": "paragraph_1547810774602_-301779329",
       "id": "20190118-112614_550926195",
       "dateCreated": "2019-01-18 11:26:14.602",
-      "dateStarted": "2019-01-18 19:05:24.813",
-      "dateFinished": "2019-01-18 19:05:27.310",
+      "dateStarted": "2019-01-19 13:07:17.226",
+      "dateFinished": "2019-01-19 13:07:17.231",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%md\n\n# MySQL - JDBC Konfiguration\n\n* Wichtig:  einen *neuen* JDBC Interpreter erstellen\n\n![Create](https://zeppelin.apache.org/docs/0.8.0/assets/themes/zeppelin/img/docs-img/click_create_button.png)\n![Name](https://zeppelin.apache.org/docs/0.8.0/assets/themes/zeppelin/img/docs-img/select_name_and_group.png)\n\n",
+      "text": "%md\n\n# MySQL - JDBC Konfiguration\n\n* Wichtig:  einen *neuen* JDBC Interpreter erstellen\n* Das wurde hier aber schon alles gemacht...\n\n![Create](https://zeppelin.apache.org/docs/0.8.0/assets/themes/zeppelin/img/docs-img/click_create_button.png)\n![Name](https://zeppelin.apache.org/docs/0.8.0/assets/themes/zeppelin/img/docs-img/select_name_and_group.png)\n\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 19:05:27.313",
+      "dateUpdated": "2019-01-19 13:07:17.326",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -55,7 +55,7 @@
           "completionSupport": false
         },
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "tableHide": false
       },
       "settings": {
@@ -67,7 +67,7 @@
         "msg": [
           {
             "type": "HTML",
-            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eMySQL - JDBC Konfiguration\u003c/h1\u003e\n\u003cul\u003e\n  \u003cli\u003eWichtig: einen \u003cem\u003eneuen\u003c/em\u003e JDBC Interpreter erstellen\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cimg src\u003d\"https://zeppelin.apache.org/docs/0.8.0/assets/themes/zeppelin/img/docs-img/click_create_button.png\" alt\u003d\"Create\" /\u003e\u003cbr/\u003e\u003cimg src\u003d\"https://zeppelin.apache.org/docs/0.8.0/assets/themes/zeppelin/img/docs-img/select_name_and_group.png\" alt\u003d\"Name\" /\u003e\u003c/p\u003e\n\u003c/div\u003e"
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eMySQL - JDBC Konfiguration\u003c/h1\u003e\n\u003cul\u003e\n  \u003cli\u003eWichtig: einen \u003cem\u003eneuen\u003c/em\u003e JDBC Interpreter erstellen\u003c/li\u003e\n  \u003cli\u003eDas wurde hier aber schon alles gemacht\u0026hellip;\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cimg src\u003d\"https://zeppelin.apache.org/docs/0.8.0/assets/themes/zeppelin/img/docs-img/click_create_button.png\" alt\u003d\"Create\" /\u003e\u003cbr/\u003e\u003cimg src\u003d\"https://zeppelin.apache.org/docs/0.8.0/assets/themes/zeppelin/img/docs-img/select_name_and_group.png\" alt\u003d\"Name\" /\u003e\u003c/p\u003e\n\u003c/div\u003e"
           }
         ]
       },
@@ -75,15 +75,15 @@
       "jobName": "paragraph_1547810804750_-13941697",
       "id": "20190118-112644_72007333",
       "dateCreated": "2019-01-18 11:26:44.750",
-      "dateStarted": "2019-01-18 19:05:27.560",
-      "dateFinished": "2019-01-18 19:05:27.613",
+      "dateStarted": "2019-01-19 13:07:17.348",
+      "dateFinished": "2019-01-19 13:07:17.361",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%md\n\n* Wechsel auf MySQL (statt default PostgreSQL)\n```text\ndefault.driver             com.mysql.jdbc.Driver\ndefault.url                jdbc:mysql://localhost:3306/\ndefault.user               reader\ndefault.password           reader\n```\n\n* JDBC Treiber\nDependencies, artifact \n```text\n/usr/share/java/mysql.jar\n```\n\n* Es düfen keine Punkte `.` in den Bezeichnern verwendet werden\n\n* weitere Verbindungen\n```text\nsb-db-01_reader.driver     com.mysql.jdbc.Driver\nsb-db-01_reader.url        jdbc:mysql://localhost:3306/\nsb-db-01_reader.user       reader\nsb-db-01_reader.password   reader\nsb-db-01_zepadmin.driver   com.mysql.jdbc.Driver\nsb-db-01_zepadmin.url      jdbc:mysql://localhost:3306/\nsb-db-01_zepadmin.user     zepadmin\nsb-db-01_zepadmin.password dbAdmin\n```\n\n\n",
+      "text": "%md\n\n* Wechsel auf MySQL (statt default PostgreSQL)\n```text\ndefault.driver             com.mysql.jdbc.Driver\ndefault.url                jdbc:mysql://localhost:3306/\ndefault.user               reader\ndefault.password           reader\n```\n\n* JDBC Treiber\nDependencies, artifact \n```text\n/usr/share/java/mysql.jar\n```\n\n* Es düfen keine Punkte `.` in den Bezeichnern verwendet werden\n\n* weitere Verbindungen möglich:\n```text\nsb-db-01-lxd_reader.driver     com.mysql.jdbc.Driver\nsb-db-01-lxd_reader.url        jdbc:mysql://sb-db-01-lxd:3306/\nsb-db-01-lxd_reader.user       reader\nsb-db-01-lxd_reader.password   reader\nsb-db-01-lxd_zepadmin.driver   com.mysql.jdbc.Driver\nsb-db-01-lxd_zepadmin.url      jdbc:mysql://sb-db-01-lxd:3306/\nsb-db-01-lxd_zepadmin.user     zepadmin\nsb-db-01-lxd_zepadmin.password dbAdmin\n```\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 19:05:27.637",
+      "dateUpdated": "2019-01-19 13:07:17.447",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -95,7 +95,7 @@
           "completionSupport": false
         },
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "tableHide": false
       },
       "settings": {
@@ -107,7 +107,7 @@
         "msg": [
           {
             "type": "HTML",
-            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cul\u003e\n  \u003cli\u003e\n  \u003cp\u003e\n  \u003cp\u003eWechsel auf MySQL (statt default PostgreSQL)\u003c/p\u003e\n  \u003cpre\u003e\u003ccode class\u003d\"text\"\u003edefault.driver             com.mysql.jdbc.Driver\ndefault.url                jdbc:mysql://localhost:3306/\ndefault.user               reader\ndefault.password           reader\n\u003c/code\u003e\u003c/pre\u003e\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eJDBC Treiber\u003cbr/\u003eDependencies, artifact \u003c/p\u003e\n  \u003cpre\u003e\u003ccode class\u003d\"text\"\u003e/usr/share/java/mysql.jar\n\u003c/code\u003e\u003c/pre\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eEs düfen keine Punkte \u003ccode\u003e.\u003c/code\u003e in den Bezeichnern verwendet werden\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eweitere Verbindungen\u003c/p\u003e\n  \u003cpre\u003e\u003ccode class\u003d\"text\"\u003esb-db-01_reader.driver     com.mysql.jdbc.Driver\nsb-db-01_reader.url        jdbc:mysql://localhost:3306/\nsb-db-01_reader.user       reader\nsb-db-01_reader.password   reader\nsb-db-01_zepadmin.driver   com.mysql.jdbc.Driver\nsb-db-01_zepadmin.url      jdbc:mysql://localhost:3306/\nsb-db-01_zepadmin.user     zepadmin\nsb-db-01_zepadmin.password dbAdmin\n\u003c/code\u003e\u003c/pre\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cul\u003e\n  \u003cli\u003e\n  \u003cp\u003e\n  \u003cp\u003eWechsel auf MySQL (statt default PostgreSQL)\u003c/p\u003e\n  \u003cpre\u003e\u003ccode class\u003d\"text\"\u003edefault.driver             com.mysql.jdbc.Driver\ndefault.url                jdbc:mysql://localhost:3306/\ndefault.user               reader\ndefault.password           reader\n\u003c/code\u003e\u003c/pre\u003e\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eJDBC Treiber\u003cbr/\u003eDependencies, artifact \u003c/p\u003e\n  \u003cpre\u003e\u003ccode class\u003d\"text\"\u003e/usr/share/java/mysql.jar\n\u003c/code\u003e\u003c/pre\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eEs düfen keine Punkte \u003ccode\u003e.\u003c/code\u003e in den Bezeichnern verwendet werden\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eweitere Verbindungen möglich:\u003c/p\u003e\n  \u003cpre\u003e\u003ccode class\u003d\"text\"\u003esb-db-01-lxd_reader.driver     com.mysql.jdbc.Driver\nsb-db-01-lxd_reader.url        jdbc:mysql://sb-db-01-lxd:3306/\nsb-db-01-lxd_reader.user       reader\nsb-db-01-lxd_reader.password   reader\nsb-db-01-lxd_zepadmin.driver   com.mysql.jdbc.Driver\nsb-db-01-lxd_zepadmin.url      jdbc:mysql://sb-db-01-lxd:3306/\nsb-db-01-lxd_zepadmin.user     zepadmin\nsb-db-01-lxd_zepadmin.password dbAdmin\n\u003c/code\u003e\u003c/pre\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
           }
         ]
       },
@@ -115,85 +115,15 @@
       "jobName": "paragraph_1547816435084_1577440349",
       "id": "20190118-130035_567659060",
       "dateCreated": "2019-01-18 13:00:35.084",
-      "dateStarted": "2019-01-18 19:05:27.774",
-      "dateFinished": "2019-01-18 19:05:27.814",
-      "status": "FINISHED",
-      "progressUpdateIntervalMs": 500
-    },
-    {
-      "text": "%md\n\n## Config-File\n\nDie Angaben werden automatisch in `conf/interpreter.json` geschrieben\n\n\n``` json\n        \"sb-db-01_zepadmin.driver\": {\n          \"name\": \"sb-db-01_zepadmin.driver\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_zepadmin.url\": {\n          \"name\": \"sb-db-01_zepadmin.url\",\n          \"value\": \"jdbc:mysql://localhost:3306/\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_zepadmin.user\": {\n          \"name\": \"sb-db-01_zepadmin.user\",\n          \"value\": \"zepadmin\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_zepadmin.password\": {\n          \"name\": \"sb-db-01_zepadmin.password\",\n          \"value\": \"dbAdmin\",\n          \"type\": \"password\"\n        },\n\n        \"sb-db-01_reader.driver\": {\n          \"name\": \"sb-db-01_reader.driver\",\n          \"value\": \"com.mysql.jdbc.Driver\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_reader.url\": {\n          \"name\": \"sb-db-01_reader.url\",\n          \"value\": \"jdbc:mysql://localhost:3306/\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_reader.user\": {\n          \"name\": \"sb-db-01_reader.user\",\n          \"value\": \"reader\",\n          \"type\": \"textarea\"\n        },\n        \"sb-db-01_reader.password\": {\n          \"name\": \"sb-db-01_reader.password\",\n          \"value\": \"reader\",\n          \"type\": \"password\"\n        },\n\n\n```\n",
-      "user": "it-gro",
-      "dateUpdated": "2019-01-18 19:05:27.868",
-      "config": {
-        "colWidth": 12.0,
-        "fontSize": 9.0,
-        "enabled": true,
-        "results": {
-          "0": {
-            "graph": {
-              "mode": "table",
-              "height": 300.0,
-              "optionOpen": false,
-              "setting": {
-                "table": {
-                  "tableGridState": {},
-                  "tableColumnTypeState": {
-                    "names": {
-                      "current_user()": "string",
-                      "@@hostname": "string"
-                    },
-                    "updated": false
-                  },
-                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
-                  "tableOptionValue": {
-                    "useFilter": false,
-                    "showPagination": false,
-                    "showAggregationFooter": false
-                  },
-                  "updated": false,
-                  "initialized": false
-                }
-              },
-              "commonSetting": {}
-            },
-            "helium": {}
-          }
-        },
-        "editorSetting": {
-          "language": "markdown",
-          "editOnDblClick": true,
-          "completionSupport": false
-        },
-        "editorMode": "ace/mode/markdown",
-        "editorHide": true,
-        "tableHide": false
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "HTML",
-            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eConfig-File\u003c/h2\u003e\n\u003cp\u003eDie Angaben werden automatisch in \u003ccode\u003econf/interpreter.json\u003c/code\u003e geschrieben\u003c/p\u003e\n\u003cpre\u003e\u003ccode class\u003d\"json\"\u003e        \u0026quot;sb-db-01_zepadmin.driver\u0026quot;: {\n          \u0026quot;name\u0026quot;: \u0026quot;sb-db-01_zepadmin.driver\u0026quot;,\n          \u0026quot;value\u0026quot;: \u0026quot;com.mysql.jdbc.Driver\u0026quot;,\n          \u0026quot;type\u0026quot;: \u0026quot;textarea\u0026quot;\n        },\n        \u0026quot;sb-db-01_zepadmin.url\u0026quot;: {\n          \u0026quot;name\u0026quot;: \u0026quot;sb-db-01_zepadmin.url\u0026quot;,\n          \u0026quot;value\u0026quot;: \u0026quot;jdbc:mysql://localhost:3306/\u0026quot;,\n          \u0026quot;type\u0026quot;: \u0026quot;textarea\u0026quot;\n        },\n        \u0026quot;sb-db-01_zepadmin.user\u0026quot;: {\n          \u0026quot;name\u0026quot;: \u0026quot;sb-db-01_zepadmin.user\u0026quot;,\n          \u0026quot;value\u0026quot;: \u0026quot;zepadmin\u0026quot;,\n          \u0026quot;type\u0026quot;: \u0026quot;textarea\u0026quot;\n        },\n        \u0026quot;sb-db-01_zepadmin.password\u0026quot;: {\n          \u0026quot;name\u0026quot;: \u0026quot;sb-db-01_zepadmin.password\u0026quot;,\n          \u0026quot;value\u0026quot;: \u0026quot;dbAdmin\u0026quot;,\n          \u0026quot;type\u0026quot;: \u0026quot;password\u0026quot;\n        },\n\n        \u0026quot;sb-db-01_reader.driver\u0026quot;: {\n          \u0026quot;name\u0026quot;: \u0026quot;sb-db-01_reader.driver\u0026quot;,\n          \u0026quot;value\u0026quot;: \u0026quot;com.mysql.jdbc.Driver\u0026quot;,\n          \u0026quot;type\u0026quot;: \u0026quot;textarea\u0026quot;\n        },\n        \u0026quot;sb-db-01_reader.url\u0026quot;: {\n          \u0026quot;name\u0026quot;: \u0026quot;sb-db-01_reader.url\u0026quot;,\n          \u0026quot;value\u0026quot;: \u0026quot;jdbc:mysql://localhost:3306/\u0026quot;,\n          \u0026quot;type\u0026quot;: \u0026quot;textarea\u0026quot;\n        },\n        \u0026quot;sb-db-01_reader.user\u0026quot;: {\n          \u0026quot;name\u0026quot;: \u0026quot;sb-db-01_reader.user\u0026quot;,\n          \u0026quot;value\u0026quot;: \u0026quot;reader\u0026quot;,\n          \u0026quot;type\u0026quot;: \u0026quot;textarea\u0026quot;\n        },\n        \u0026quot;sb-db-01_reader.password\u0026quot;: {\n          \u0026quot;name\u0026quot;: \u0026quot;sb-db-01_reader.password\u0026quot;,\n          \u0026quot;value\u0026quot;: \u0026quot;reader\u0026quot;,\n          \u0026quot;type\u0026quot;: \u0026quot;password\u0026quot;\n        },\n\n\n\u003c/code\u003e\u003c/pre\u003e\n\u003c/div\u003e"
-          }
-        ]
-      },
-      "apps": [],
-      "jobName": "paragraph_1547810861356_1614502811",
-      "id": "20190118-112741_203586440",
-      "dateCreated": "2019-01-18 11:27:41.356",
-      "dateStarted": "2019-01-18 19:05:27.982",
-      "dateFinished": "2019-01-18 19:05:28.012",
+      "dateStarted": "2019-01-19 13:07:17.464",
+      "dateFinished": "2019-01-19 13:07:17.475",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n\n# MySQL - \"Verbindungskontrolle\"",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 19:05:28.082",
+      "dateUpdated": "2019-01-19 13:07:17.563",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -205,7 +135,7 @@
           "completionSupport": false
         },
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "tableHide": false
       },
       "settings": {
@@ -225,15 +155,15 @@
       "jobName": "paragraph_1547817212892_528658223",
       "id": "20190118-131332_1408497385",
       "dateCreated": "2019-01-18 13:13:32.892",
-      "dateStarted": "2019-01-18 19:05:28.157",
-      "dateFinished": "2019-01-18 19:05:28.197",
+      "dateStarted": "2019-01-19 13:07:17.585",
+      "dateFinished": "2019-01-19 13:07:17.591",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%mysql\nSELECT @@hostname, current_user();\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 19:05:28.256",
+      "dateUpdated": "2019-01-19 13:07:17.680",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -281,169 +211,39 @@
         "forms": {}
       },
       "results": {
-        "code": "ERROR",
-        "msg": []
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "@@hostname\tcurrent_user()\nsb-db-01\treader@localhost\n"
+          }
+        ]
       },
       "apps": [],
       "jobName": "paragraph_1547817302001_1279719469",
       "id": "20190118-131502_959092684",
       "dateCreated": "2019-01-18 13:15:02.001",
-      "dateStarted": "2019-01-18 17:58:02.462",
-      "dateFinished": "2019-01-18 17:58:02.532",
-      "status": "ERROR",
-      "errorMessage": "org.apache.zeppelin.interpreter.InterpreterNotFoundException: Either no interpreter named mysql or it is not binded to this note\n\tat org.apache.zeppelin.interpreter.InterpreterFactory.getInterpreter(InterpreterFactory.java:101)\n\tat org.apache.zeppelin.notebook.Paragraph.getBindedInterpreter(Paragraph.java:242)\n\tat org.apache.zeppelin.notebook.Paragraph.execute(Paragraph.java:350)\n\tat org.apache.zeppelin.notebook.Note.run(Note.java:683)\n\tat org.apache.zeppelin.socket.NotebookServer.persistAndExecuteSingleParagraph(NotebookServer.java:1867)\n\tat org.apache.zeppelin.socket.NotebookServer.runAllParagraphs(NotebookServer.java:1731)\n\tat org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:267)\n\tat org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:59)\n\tat org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:128)\n\tat org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)\n\tat org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)\n\tat org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:122)\n\tat org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:161)\n\tat org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:309)\n\tat org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:214)\n\tat org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:220)\n\tat org.eclipse.jetty.websocket.common.Parser.parse(Parser.java:258)\n\tat org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.readParse(AbstractWebSocketConnection.java:632)\n\tat org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:480)\n\tat org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)\n\tat org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)\n\tat org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)\n\tat java.base/java.lang.Thread.run(Thread.java:844)\n",
-      "progressUpdateIntervalMs": 500
-    },
-    {
-      "text": "%mysql(sb-db-01_zepadmin)\nshow databases;",
-      "user": "it-gro",
-      "dateUpdated": "2019-01-18 17:58:02.558",
-      "config": {
-        "colWidth": 12.0,
-        "fontSize": 9.0,
-        "enabled": true,
-        "results": {
-          "0": {
-            "graph": {
-              "mode": "table",
-              "height": 300.0,
-              "optionOpen": false,
-              "setting": {
-                "table": {
-                  "tableGridState": {},
-                  "tableColumnTypeState": {
-                    "names": {
-                      "SCHEMA_NAME": "string"
-                    },
-                    "updated": false
-                  },
-                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
-                  "tableOptionValue": {
-                    "useFilter": false,
-                    "showPagination": false,
-                    "showAggregationFooter": false
-                  },
-                  "updated": false,
-                  "initialized": false
-                }
-              },
-              "commonSetting": {}
-            }
-          }
-        },
-        "editorSetting": {
-          "language": "sql",
-          "editOnDblClick": false,
-          "completionSupport": true
-        },
-        "editorMode": "ace/mode/sql",
-        "editorHide": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TABLE",
-            "data": "SCHEMA_NAME\ninformation_schema\ncolors\ndslabs_ext\nfoodmart\nkddcup99\nmenagerie\nmovielens_100k\nmovielens_latest_small\nmysql\nopenaq_org\noracle_hr_innodb\noracle_hr_myisam\noracle_scott_csv\noracle_scott_innodb\noracle_scott_myisam\nperformance_schema\nphpmyadmin\nsakila\nsys\nuci_ml_bank\nworld\n"
-          }
-        ]
-      },
-      "apps": [],
-      "jobName": "paragraph_1547813095894_78979497",
-      "id": "20190118-120455_520557514",
-      "dateCreated": "2019-01-18 12:04:55.894",
-      "dateStarted": "2019-01-18 17:58:02.655",
-      "dateFinished": "2019-01-18 17:58:02.732",
+      "dateStarted": "2019-01-19 13:07:17.700",
+      "dateFinished": "2019-01-19 13:07:17.711",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%mysql(sb-db-01_reader)\nshow databases;\n",
+      "text": "%md\n* Hier wurden die Verbinungen schon vordefiniert\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 17:58:02.754",
-      "config": {
-        "colWidth": 12.0,
-        "fontSize": 9.0,
-        "enabled": true,
-        "results": {
-          "0": {
-            "graph": {
-              "mode": "table",
-              "height": 300.0,
-              "optionOpen": false,
-              "setting": {
-                "table": {
-                  "tableGridState": {},
-                  "tableColumnTypeState": {
-                    "names": {
-                      "SCHEMA_NAME": "string"
-                    },
-                    "updated": false
-                  },
-                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
-                  "tableOptionValue": {
-                    "useFilter": false,
-                    "showPagination": false,
-                    "showAggregationFooter": false
-                  },
-                  "updated": false,
-                  "initialized": false
-                }
-              },
-              "commonSetting": {}
-            }
-          }
-        },
-        "editorSetting": {
-          "language": "sql",
-          "editOnDblClick": false,
-          "completionSupport": true
-        },
-        "editorMode": "ace/mode/sql",
-        "editorHide": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TABLE",
-            "data": "SCHEMA_NAME\ninformation_schema\ncolors\ndslabs_ext\nfoodmart\nkddcup99\nmenagerie\nmovielens_100k\nmovielens_latest_small\nmysql\nopenaq_org\noracle_hr_innodb\noracle_hr_myisam\noracle_scott_csv\noracle_scott_innodb\noracle_scott_myisam\nperformance_schema\nphpmyadmin\nsakila\nsys\nuci_ml_bank\nworld\n"
-          }
-        ]
-      },
-      "apps": [],
-      "jobName": "paragraph_1547813435115_561859997",
-      "id": "20190118-121035_668392296",
-      "dateCreated": "2019-01-18 12:10:35.115",
-      "dateStarted": "2019-01-18 17:58:02.834",
-      "dateFinished": "2019-01-18 17:58:02.927",
-      "status": "FINISHED",
-      "progressUpdateIntervalMs": 500
-    },
-    {
-      "text": "%mysql\nuse oracle_scott_myisam;\n",
-      "user": "it-gro",
-      "dateUpdated": "2019-01-18 17:58:02.933",
+      "dateUpdated": "2019-01-19 13:07:17.799",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
-          "language": "sql",
-          "editOnDblClick": false,
-          "completionSupport": true
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
         },
-        "editorMode": "ace/mode/sql",
-        "editorHide": true
+        "editorMode": "ace/mode/markdown",
+        "editorHide": false
       },
       "settings": {
         "params": {},
@@ -453,24 +253,24 @@
         "code": "SUCCESS",
         "msg": [
           {
-            "type": "TEXT",
-            "data": "Query executed successfully. Affected rows : 0"
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cul\u003e\n  \u003cli\u003eHier wurden die Verbinungen schon vordefiniert\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
           }
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1547815031417_-1380286362",
-      "id": "20190118-123711_118780571",
-      "dateCreated": "2019-01-18 12:37:11.417",
-      "dateStarted": "2019-01-18 17:58:03.043",
-      "dateFinished": "2019-01-18 17:58:03.091",
+      "jobName": "paragraph_1547902089314_-545763337",
+      "id": "20190119-124809_1017907898",
+      "dateCreated": "2019-01-19 12:48:09.314",
+      "dateStarted": "2019-01-19 13:07:17.816",
+      "dateFinished": "2019-01-19 13:07:17.819",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%mysql\nshow tables;\n",
+      "text": "%mysql(uci_ml_bank)\nshow tables;\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 17:58:03.129",
+      "dateUpdated": "2019-01-19 13:07:17.915",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -510,7 +310,8 @@
           "completionSupport": true
         },
         "editorMode": "ace/mode/sql",
-        "editorHide": true
+        "editorHide": false,
+        "tableHide": false
       },
       "settings": {
         "params": {},
@@ -521,23 +322,63 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "TABLE_NAME\nbonus\ndept\nemp\nsalgrade\n"
+            "data": "TABLE_NAME\nbank\n"
           }
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1547816328767_1544755208",
-      "id": "20190118-125848_1405174515",
-      "dateCreated": "2019-01-18 12:58:48.767",
-      "dateStarted": "2019-01-18 17:58:03.254",
-      "dateFinished": "2019-01-18 17:58:03.281",
+      "jobName": "paragraph_1547813095894_78979497",
+      "id": "20190118-120455_520557514",
+      "dateCreated": "2019-01-18 12:04:55.894",
+      "dateStarted": "2019-01-19 13:07:17.934",
+      "dateFinished": "2019-01-19 13:07:17.959",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%mysql\nSELECT * FROM emp LIMIT 10;\n",
+      "text": "%md\n* Die Datenbanken sind:\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 17:58:03.331",
+      "dateUpdated": "2019-01-19 13:07:18.033",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cul\u003e\n  \u003cli\u003eDie Datenbanken sind:\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547902490486_233492600",
+      "id": "20190119-125450_1672168909",
+      "dateCreated": "2019-01-19 12:54:50.486",
+      "dateStarted": "2019-01-19 13:07:18.054",
+      "dateFinished": "2019-01-19 13:07:18.071",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%mysql\nshow databases;\n",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-19 13:07:18.154",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -553,14 +394,7 @@
                   "tableGridState": {},
                   "tableColumnTypeState": {
                     "names": {
-                      "empno": "string",
-                      "ename": "string",
-                      "job": "string",
-                      "mgr": "string",
-                      "hiredate": "string",
-                      "sal": "string",
-                      "comm": "string",
-                      "deptno": "string"
+                      "SCHEMA_NAME": "string"
                     },
                     "updated": false
                   },
@@ -584,7 +418,7 @@
           "completionSupport": true
         },
         "editorMode": "ace/mode/sql",
-        "editorHide": true
+        "editorHide": false
       },
       "settings": {
         "params": {},
@@ -595,23 +429,100 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "empno\tename\tjob\tmgr\thiredate\tsal\tcomm\tdeptno\n7369\tSMITH\tCLERK\t7902\t1980-12-17\t800\tnull\t20\n7499\tALLEN\tSALESMAN\t7698\t1981-02-20\t1600\t300\t30\n7521\tWARD\tSALESMAN\t7698\t1981-02-22\t1250\t500\t30\n7566\tJONES\tMANAGER\t7839\t1981-04-02\t2975\tnull\t20\n7654\tMARTIN\tSALESMAN\t7698\t1981-09-28\t1250\t1400\t30\n7698\tBLAKE\tMANAGER\t7839\t1981-05-01\t2850\tnull\t30\n7782\tCLARK\tMANAGER\t7839\t1981-06-09\t2450\tnull\t10\n7788\tSCOTT\tANALYST\t7566\t1982-12-09\t3000\tnull\t20\n7839\tKING\tPRESIDENT\tnull\t1981-11-17\t5000\tnull\t10\n7844\tTURNER\tSALESMAN\t7698\t1981-09-08\t1500\t0\t30\n"
+            "data": "SCHEMA_NAME\ninformation_schema\ncolors\ndslabs_ext\nfoodmart\nkddcup99\nmenagerie\nmovielens_100k\nmovielens_latest_small\nmysql\nopenaq_org\noracle_hr_innodb\noracle_hr_myisam\noracle_scott_csv\noracle_scott_innodb\noracle_scott_myisam\nperformance_schema\nphpmyadmin\nsakila\nsys\nuci_ml_bank\nworld\n"
           }
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1547816347534_2116789013",
-      "id": "20190118-125907_360311315",
-      "dateCreated": "2019-01-18 12:59:07.534",
-      "dateStarted": "2019-01-18 17:58:03.369",
-      "dateFinished": "2019-01-18 17:58:03.393",
+      "jobName": "paragraph_1547813435115_561859997",
+      "id": "20190118-121035_668392296",
+      "dateCreated": "2019-01-18 12:10:35.115",
+      "dateStarted": "2019-01-19 13:07:18.175",
+      "dateFinished": "2019-01-19 13:07:18.190",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%mysql\ndescribe emp;\n",
+      "text": "%mysql(uci_ml_bank)\nselect age, count(1) value \nfrom bank \nwhere age \u003c ${maxAge\u003d30} \ngroup by age \norder by age\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 17:58:03.468",
+      "dateUpdated": "2019-01-19 13:08:01.897",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "age": "string",
+                      "value": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql",
+        "editorHide": false
+      },
+      "settings": {
+        "params": {
+          "maxAge": "30"
+        },
+        "forms": {
+          "maxAge": {
+            "type": "TextBox",
+            "name": "maxAge",
+            "defaultValue": "30",
+            "hidden": false
+          }
+        }
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "age\tvalue\n19\t4\n20\t3\n21\t7\n22\t9\n23\t20\n24\t24\n25\t44\n26\t77\n27\t94\n28\t103\n29\t97\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547815031417_-1380286362",
+      "id": "20190118-123711_118780571",
+      "dateCreated": "2019-01-18 12:37:11.417",
+      "dateStarted": "2019-01-19 13:07:18.306",
+      "dateFinished": "2019-01-19 13:07:18.337",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%mysql(uci_ml_bank)\ndescribe bank\n",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-19 13:07:18.400",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -656,7 +567,7 @@
           "completionSupport": true
         },
         "editorMode": "ace/mode/sql",
-        "editorHide": true
+        "editorHide": false
       },
       "settings": {
         "params": {},
@@ -667,45 +578,287 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "COLUMN_NAME\tCOLUMN_TYPE\tIS_NULLABLE\tCOLUMN_KEY\tCOLUMN_DEFAULT\tEXTRA\nempno\tint(11)\tYES\t\tnull\t\nename\tvarchar(10)\tYES\t\tnull\t\njob\tvarchar(9)\tYES\t\tnull\t\nmgr\tint(11)\tYES\t\tnull\t\nhiredate\tdate\tYES\t\tnull\t\nsal\tfloat\tYES\t\tnull\t\ncomm\tfloat\tYES\t\tnull\t\ndeptno\tint(11)\tYES\t\tnull\t\n"
+            "data": "COLUMN_NAME\tCOLUMN_TYPE\tIS_NULLABLE\tCOLUMN_KEY\tCOLUMN_DEFAULT\tEXTRA\nage\tint(11)\tYES\t\tnull\t\njob\tvarchar(100)\tYES\t\tnull\t\nmarital\tvarchar(100)\tYES\t\tnull\t\neducation\tvarchar(100)\tYES\t\tnull\t\ncredit_default\tvarchar(100)\tYES\t\tnull\t\nbalance\tvarchar(100)\tYES\t\tnull\t\nhousing\tvarchar(100)\tYES\t\tnull\t\nloan\tvarchar(100)\tYES\t\tnull\t\ncontact\tvarchar(100)\tYES\t\tnull\t\nday\tvarchar(100)\tYES\t\tnull\t\nmonth\tvarchar(100)\tYES\t\tnull\t\nduration\tint(11)\tYES\t\tnull\t\ncampaign\tint(11)\tYES\t\tnull\t\npdays\tint(11)\tYES\t\tnull\t\nprevious\tint(11)\tYES\t\tnull\t\npoutcome\tvarchar(100)\tYES\t\tnull\t\ny\tvarchar(100)\tYES\t\tnull\t\n"
           }
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1547817424611_-200641896",
-      "id": "20190118-131704_799919383",
-      "dateCreated": "2019-01-18 13:17:04.611",
-      "dateStarted": "2019-01-18 17:58:03.506",
-      "dateFinished": "2019-01-18 17:58:03.523",
+      "jobName": "paragraph_1547816328767_1544755208",
+      "id": "20190118-125848_1405174515",
+      "dateCreated": "2019-01-18 12:58:48.767",
+      "dateStarted": "2019-01-19 13:07:18.419",
+      "dateFinished": "2019-01-19 13:07:18.441",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%mysql\n",
+      "text": "%mysql(movielens_100k)\nshow tables;\n\n",
       "user": "it-gro",
-      "dateUpdated": "2019-01-18 17:58:03.605",
+      "dateUpdated": "2019-01-19 13:07:18.519",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
         "enabled": true,
-        "results": {},
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "TABLE_NAME": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
         "editorSetting": {
           "language": "sql",
           "editOnDblClick": false,
           "completionSupport": true
         },
         "editorMode": "ace/mode/sql",
-        "editorHide": true
+        "editorHide": false
       },
       "settings": {
         "params": {},
         "forms": {}
       },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "TABLE_NAME\nu_data\nu_genre\nu_info\nu_item\nu_occupation\nu_user\n"
+          }
+        ]
+      },
       "apps": [],
       "jobName": "paragraph_1547817510849_1424438743",
       "id": "20190118-131830_397081121",
       "dateCreated": "2019-01-18 13:18:30.849",
+      "dateStarted": "2019-01-19 13:07:18.537",
+      "dateFinished": "2019-01-19 13:07:18.553",
       "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%mysql(movielens_100k)\nselect rating, count(movieid) from u_data group by rating order by rating DESC",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-19 13:07:21.946",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "rating": "string",
+                      "count(movieid)": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "rating",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "count(movieid)",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql",
+        "editorHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "rating\tcount(movieid)\n5\t21201\n4\t34174\n3\t27145\n2\t11370\n1\t6110\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547902410032_-1303129886",
+      "id": "20190119-125330_1493037106",
+      "dateCreated": "2019-01-19 12:53:30.032",
+      "dateStarted": "2019-01-19 13:07:18.653",
+      "dateFinished": "2019-01-19 13:07:18.702",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%mysql(movielens_100k)\nselect rating, movieid, count(userid) \nfrom u_data  where rating \u003e 2 \ngroup by rating, movieid \nhaving count(userid) \u003e 100 \norder by rating DESC, count(userid) DESC, movieid\n",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-19 13:07:18.753",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "rating": "string",
+                      "movieid": "string",
+                      "count(userid)": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default",
+                  "stacked": false
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "rating",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": []
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "rating\tmovieid\tcount(userid)\n5\t50\t325\n5\t100\t227\n5\t127\t214\n5\t174\t202\n5\t56\t188\n5\t318\t186\n5\t98\t181\n5\t313\t179\n5\t172\t172\n5\t181\t171\n5\t64\t163\n5\t173\t159\n5\t12\t149\n5\t483\t141\n5\t22\t134\n5\t258\t132\n5\t286\t131\n5\t357\t126\n5\t168\t125\n5\t302\t120\n5\t1\t119\n5\t89\t112\n5\t191\t107\n5\t603\t107\n5\t496\t104\n5\t96\t103\n5\t132\t102\n5\t79\t101\n5\t134\t101\n5\t183\t101\n4\t258\t212\n4\t181\t208\n4\t1\t202\n4\t100\t179\n4\t50\t176\n4\t237\t171\n4\t286\t167\n4\t300\t167\n4\t7\t164\n4\t79\t163\n4\t98\t163\n4\t117\t163\n4\t288\t161\n4\t222\t155\n4\t121\t152\n4\t294\t151\n4\t204\t149\n4\t174\t146\n4\t210\t142\n4\t127\t137\n4\t216\t134\n4\t28\t131\n4\t257\t126\n4\t69\t125\n4\t176\t125\n4\t269\t125\n4\t275\t124\n4\t70\t123\n4\t96\t123\n4\t195\t123\n4\t183\t122\n4\t172\t121\n4\t196\t119\n4\t302\t119\n4\t111\t118\n4\t168\t117\n4\t191\t117\n4\t405\t117\n4\t234\t116\n4\t202\t115\n4\t9\t114\n4\t15\t114\n4\t25\t111\n4\t328\t109\n4\t151\t108\n4\t89\t107\n4\t56\t106\n4\t423\t106\n4\t276\t105\n4\t313\t105\n4\t742\t105\n4\t186\t104\n4\t357\t104\n4\t268\t103\n4\t568\t102\n4\t153\t101\n4\t471\t101\n3\t294\t168\n3\t288\t144\n3\t300\t128\n3\t405\t125\n3\t258\t110\n3\t222\t108\n3\t121\t107\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547902748437_-1209330215",
+      "id": "20190119-125908_253070671",
+      "dateCreated": "2019-01-19 12:59:08.437",
+      "dateStarted": "2019-01-19 13:07:18.775",
+      "dateFinished": "2019-01-19 13:07:18.833",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%mysql\n",
+      "user": "it-gro",
+      "dateUpdated": "2019-01-19 13:07:18.753",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1547903238753_1904239025",
+      "id": "20190119-130718_1397851426",
+      "dateCreated": "2019-01-19 13:07:18.753",
+      "status": "READY",
       "progressUpdateIntervalMs": 500
     }
   ],
@@ -714,7 +867,8 @@
   "noteParams": {},
   "noteForms": {},
   "angularObjects": {
-    "md:shared_process": []
+    "md:shared_process": [],
+    "mysql:shared_process": []
   },
   "config": {
     "isZeppelinNotebookCronEnable": false
